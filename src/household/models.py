@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 
 class Household(models.Model):
-    household_number = models.CharField(max_length=255, null=True)
+    household_number = models.CharField(max_length=20, null=True)
     address = models.CharField(max_length=255, null=True)
 
     def __str__(self):
@@ -11,7 +11,7 @@ class Household(models.Model):
 
 
 class Role(models.Model):
-    name = models.CharField(max_length=50, null=True)
+    name = models.CharField(max_length=20, null=True)
 
     def __str__(self):
         return self.name
