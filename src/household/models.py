@@ -2,6 +2,7 @@ from django.db import models
 
 # Create your models here.
 
+
 class Household(models.Model):
     household_number = models.CharField(max_length=20, null=True)
     address = models.CharField(max_length=255, null=True)
