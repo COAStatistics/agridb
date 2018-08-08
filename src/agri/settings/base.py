@@ -37,7 +37,8 @@ INSTALLED_APPS = [
 
     # Local app
     'household',
-    'small_big'
+    'small_big',
+    'fallow',
     # Third app
 ]
 
