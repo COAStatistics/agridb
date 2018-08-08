@@ -1,6 +1,10 @@
 # local
 local.py
 
+### pycharm ###
+venv/
+.idea/
+
 # Created by https://www.gitignore.io
 
 ### OSX ###
