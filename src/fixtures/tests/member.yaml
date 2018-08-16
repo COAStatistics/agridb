@@ -1,0 +1,99 @@
+- model: household.member
+  pk: 1
+  fields:
+    household: 1
+    role: 1
+    app_id: A123456789
+    name: 劉建均
+    birth: 1971-06-09
+    update_time: 2018-08-16T03:06:26
+
+- model: household.member
+  pk: 2
+  fields:
+    household: 2
+    role: 1
+    app_id: B123456789
+    name: 張瑞音
+    birth: 1960-01-19
+    update_time: 2018-08-16T03:06:26
+
+- model: household.member
+  pk: 3
+  fields:
+    household: 3
+    role: 1
+    app_id: C123456789
+    name: 陳彥娟
+    birth: 1983-05-14
+    update_time: 2018-08-16T03:06:26
+
+- model: household.member
+  pk: 4
+  fields:
+    household: 1
+    role: 2
+    app_id: D123456789
+    name: 王淑華
+    birth: 1984-04-07
+    update_time: 2018-08-16T03:06:26
+
+- model: household.member
+  pk: 5
+  fields:
+    household: 1
+    role: 3
+    app_id: E123456789
+    name: 林左伸
+    birth: 1964-08-21
+    update_time: 2018-08-16T03:06:26
+
+- model: household.member
+  pk: 6
+  fields:
+    household: 2
+    role: 2
+    app_id: F123456789
+    name: 林子婷
+    birth: 1984-04-07
+    update_time: 2018-08-16T03:06:26
+
+- model: household.member
+  pk: 7
+  fields:
+    household: 2
+    role: 3
+    app_id: G123456789
+    name: 陳俊宏
+    birth: 1960-01-19
+    update_time: 2018-08-16T03:06:26
+
+- model: household.member
+  pk: 8
+  fields:
+    household: 3
+    role: 2
+    app_id: H123456789
+    name: 吳文傑
+    birth: 1966-11-20
+    update_time: 2018-08-16T03:06:26
+
+- model: household.member
+  pk: 9
+  fields:
+    household: 1
+    role: 4
+    app_id: I123456789
+    name: 陳弘白
+    birth: 1993-04-12
+    update_time: 2018-08-16T03:06:26
+
+- model: household.member
+  pk: 10
+  fields:
+    household: 2
+    role: 5
+    app_id: J123456789
+    name: 黃宜靜
+    birth: 1957-04-05
+    update_time: 2018-08-16T03:06:26

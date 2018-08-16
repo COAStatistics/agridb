@@ -1,0 +1,53 @@
+- model: household.role
+  pk: 1
+  fields:
+    name: 戶長
+    update_time: 2018-08-16T03:06:26
+
+- model: household.role
+  pk: 2
+  fields:
+    name: 父
+    update_time: 2018-08-16T03:06:26
+
+- model: household.role
+  pk: 3
+  fields:
+    name: 母
+    update_time: 2018-08-16T03:06:26
+
+- model: household.role
+  pk: 4
+  fields:
+    name: 夫
+    update_time: 2018-08-16T03:06:26
+
+- model: household.role
+  pk: 5
+  fields:
+    name: 妻
+    update_time: 2018-08-16T03:06:26
+
+- model: household.role
+  pk: 6
+  fields:
+    name: 長子
+    update_time: 2018-08-16T03:06:26
+
+- model: household.role
+  pk: 7
+  fields:
+    name: 長女
+    update_time: 2018-08-16T03:06:26
+
+- model: household.role
+  pk: 8
+  fields:
+    name: 孫
+    update_time: 2018-08-16T03:06:26
+
+- model: household.role
+  pk: 9
+  fields:
+    name: 孫女
+    update_time: 2018-08-16T03:06:26

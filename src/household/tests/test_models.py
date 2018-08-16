@@ -1,8 +1,10 @@
 from django.test import TestCase
+from django.core.management import call_command
 
 from household import models
 
 # Create your tests here.
+
 
 class HouseholdTest(TestCase):
 
@@ -33,11 +35,8 @@ class MemberTest(TestCase):
 
     def setUp(self):
         print("\n\nsetUp")
-        household_number = '60001526489'
-        address = "台北市中正區南海路37號"
-        models.Household.objects.create(household_number=household_number, address=address)
-        name = '測試測試'
-        models.Role.objects.create(name=name)
+        call_command('loaddata', 'tests/role.yaml', verbosity=0)
+        call_command('loaddata', 'tests/household.yaml', verbosity=0)
 
     def test_model(self):
         print("Start test Member model")

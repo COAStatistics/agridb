@@ -1,0 +1,20 @@
+- model: household.household
+  pk: 1
+  fields:
+    household_number: N1401793
+    address: 台北市信義區信義路五段7號
+    update_time: 2018-08-16T07:04:38
+
+- model: household.household
+  pk: 2
+  fields:
+    household_number: Y9430402
+    address: 新北市板橋區中山路一段161號
+    update_time: 2018-08-16T07:04:38
+
+- model: household.household
+  pk: 3
+  fields:
+    household_number: E9583437
+    address: 高雄市苓雅區四維三路2號
+    update_time: 2018-08-16T07:04:38
