@@ -14,50 +14,39 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Crop',
-            fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=50, verbose_name='Name')),
-                ('update_time', models.DateTimeField(auto_now=True, null=True, verbose_name='Updated')),
-                ('parent', models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, to='fallow.Crop', verbose_name='Parent')),
-            ],
-        ),
-        migrations.CreateModel(
-            name='Declare',
-            fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('update_time', models.DateTimeField(auto_now=True, null=True, verbose_name='Updated')),
-                ('member', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='household.Member', verbose_name='Member')),
-            ],
-        ),
-        migrations.CreateModel(
-            name='FallowTransfer',
+            name='LandlordRent',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('subsidy', models.IntegerField(null=True, verbose_name='Subsidy')),
-                ('period', models.CharField(max_length=1, null=True, verbose_name='Period')),
                 ('update_time', models.DateTimeField(auto_now=True, null=True, verbose_name='Updated')),
-                ('crop', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='fallow.Crop', verbose_name='Crop')),
                 ('member', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='household.Member', verbose_name='Member')),
             ],
         ),
         migrations.CreateModel(
-            name='RiceArea',
+            name='LandlordRetire',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('area', models.FloatField(null=True, verbose_name='Area')),
+                ('subsidy', models.IntegerField(null=True, verbose_name='Subsidy')),
                 ('update_time', models.DateTimeField(auto_now=True, null=True, verbose_name='Updated')),
-                ('crop', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='fallow.Crop', verbose_name='Crop')),
-                ('declare', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='fallow.Declare', verbose_name='Declare')),
+                ('member', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='household.Member', verbose_name='Member')),
             ],
         ),
         migrations.CreateModel(
-            name='TransferCrop',
+            name='Tenant',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('update_time', models.DateTimeField(auto_now=True, null=True, verbose_name='Updated')),
-                ('crop', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='fallow.Crop', verbose_name='Crop')),
-                ('rice_area', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='fallow.RiceArea', verbose_name='Rice Area')),
+                ('member', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='tenant_member_set', to='household.Member', verbose_name='Member')),
+                ('owner', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='tenant_owner_set', to='household.Member', verbose_name='Landlord')),
+            ],
+        ),
+        migrations.CreateModel(
+            name='TenantTransfer',
+            fields=[
+                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('subsidy', models.IntegerField(null=True, verbose_name='Subsidy')),
+                ('update_time', models.DateTimeField(auto_now=True, null=True, verbose_name='Updated')),
+                ('member', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='household.Member', verbose_name='Member')),
             ],
         ),
     ]
