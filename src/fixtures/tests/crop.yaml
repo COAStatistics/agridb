@@ -1,0 +1,38 @@
+- model: fallow.Crop
+  pk: 1
+  fields:
+    name: 種植綠肥
+    parent: null
+
+- model: fallow.Crop
+  pk: 2
+  fields:
+    name: 大菜
+    parent: 1
+
+- model: fallow.Crop
+  pk: 3
+  fields:
+    name: 太陽麻
+    parent: 1
+
+
+- model: fallow.Crop
+  pk: 4
+  fields:
+    name: 景觀作物
+    parent: null
+
+
+- model: fallow.Crop
+  pk: 5
+  fields:
+    name: 小油菊
+    parent: 4
+
+
+- model: fallow.Crop
+  pk: 6
+  fields:
+    name: 百日草
+    parent: 4
