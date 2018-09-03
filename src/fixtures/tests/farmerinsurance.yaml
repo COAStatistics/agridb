@@ -1,0 +1,17 @@
+- model: welfare.FarmerInsurance
+  pk: 1
+  fields:
+    member: 4
+    update_time: 2018-08-01T07:04:38
+
+- model: welfare.FarmerInsurance
+  pk: 2
+  fields:
+    member: 5
+    update_time: 2018-08-02T07:04:38
+
+- model: welfare.FarmerInsurance
+  pk: 3
+  fields:
+    member: 6
+    update_time: 2018-08-03T07:04:38

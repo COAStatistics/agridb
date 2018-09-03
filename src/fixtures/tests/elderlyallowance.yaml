@@ -1,0 +1,17 @@
+- model: welfare.ElderlyAllowance
+  pk: 1
+  fields:
+    member: 1
+    update_time: 2018-08-01T07:04:38
+
+- model: welfare.ElderlyAllowance
+  pk: 2
+  fields:
+    member: 2
+    update_time: 2018-08-02T07:04:38
+
+- model: welfare.ElderlyAllowance
+  pk: 3
+  fields:
+    member: 3
+    update_time: 2018-08-03T07:04:38

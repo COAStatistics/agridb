@@ -1,0 +1,23 @@
+- model: welfare.Scholarship
+  pk: 1
+  fields:
+    member: 7
+    name: 老大
+    subsidy: 100
+    update_time: 2018-08-01T07:04:38
+
+- model: welfare.Scholarship
+  pk: 2
+  fields:
+    member: 8
+    name: 老二
+    subsidy: 100
+    update_time: 2018-08-02T07:04:38
+
+- model: welfare.Scholarship
+  pk: 3
+  fields:
+    member: 9
+    name: 老三
+    subsidy: 100
+    update_time: 2018-08-03T07:04:38
