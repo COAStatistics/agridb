@@ -25,7 +25,7 @@ class Livestock(Model):
 
 
 class Investigation(Model):
-    year = IntegerField(verbose_name='Total Pages')
+    year = IntegerField(verbose_name='Year')
     season = CharField(max_length=1, choices=SEASON_CHOICES, verbose_name='Season')
     update_time = DateTimeField(auto_now=True, null=True, blank=True, verbose_name='Updated')
 
@@ -59,6 +59,6 @@ class AnimalCount(Model):
     update_time = DateTimeField(auto_now=True, null=True, blank=True, verbose_name='Updated')
 
     def __str__(self):
-        return self.value
+        return 'field:{0}, type:{1}, value:{2}'.format(self.field, self.count_type.name, self.value)
 
 
