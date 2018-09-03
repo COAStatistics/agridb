@@ -44,7 +44,6 @@ INSTALLED_APPS = [
     'welfare',
 
     # Third app
-    'rest_framework',
 ]
 
 MIDDLEWARE = [
