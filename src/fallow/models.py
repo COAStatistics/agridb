@@ -25,7 +25,7 @@ class RiceArea(models.Model):
     update_time = models.DateTimeField(auto_now=True, auto_now_add=False, null=True, blank=True, verbose_name='Updated')
 
     def __str__(self):
-        return self.area
+        return str(self.area)
 
 
 class FallowTransfer(models.Model):

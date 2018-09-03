@@ -1,0 +1,20 @@
+- model: fallow.RiceArea
+  pk: 1
+  fields:
+    declare: 1
+    crop: 1
+    area: 1.414
+
+- model: fallow.RiceArea
+  pk: 2
+  fields:
+    declare: 2
+    crop: 2
+    area: 3.14
+
+- model: fallow.RiceArea
+  pk: 3
+  fields:
+    declare: 3
+    crop: 3
+    area: 0.18

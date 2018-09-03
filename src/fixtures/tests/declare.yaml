@@ -1,0 +1,14 @@
+- model: fallow.Declare
+  pk: 1
+  fields:
+    member: 1
+
+- model: fallow.Declare
+  pk: 2
+  fields:
+    member: 2
+
+- model: fallow.Declare
+  pk: 3
+  fields:
+    member: 3
