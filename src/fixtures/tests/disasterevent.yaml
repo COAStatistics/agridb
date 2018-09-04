@@ -1,0 +1,15 @@
+- model: disaster.disasterevent
+  pk: 1
+  fields:
+    name: 杜鵑颱風
+
+
+- model: disaster.disasterevent
+  pk: 2
+  fields:
+    name: 熱低壓豪雨
+
+- model: disaster.disasterevent
+  pk: 3
+  fields:
+    name: 寒流
