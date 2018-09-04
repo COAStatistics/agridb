@@ -1,0 +1,17 @@
+- model: livestock.Profile
+  pk: 1
+  fields:
+    investigation: 1
+    field: 1
+    livestock: 1
+    count_type: 1
+    value: 100
+
+- model: livestock.Profile
+  pk: 2
+  fields:
+    investigation: 2
+    field: 2
+    livestock: 2
+    count_type: 2
+    value: 199

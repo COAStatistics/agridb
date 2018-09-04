@@ -1,0 +1,23 @@
+- model: livestock.Investigation
+  pk: 1
+  fields:
+    year: 2017
+    season: Q1
+
+- model: livestock.Investigation
+  pk: 2
+  fields:
+    year: 2017
+    season: Q2
+
+- model: livestock.Investigation
+  pk: 3
+  fields:
+    year: 2017
+    season: Q3
+
+- model: livestock.Investigation
+  pk: 4
+  fields:
+    year: 2017
+    season: Q4
