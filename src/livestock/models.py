@@ -50,7 +50,7 @@ class Field(Model):
         return self.name
 
 
-class AnimalCount(Model):
+class Profile(Model):
     investigation = ForeignKey('livestock.Investigation', on_delete=CASCADE, verbose_name='Investigation')
     field = ForeignKey('livestock.Field', on_delete=CASCADE, verbose_name='Field')
     livestock = ForeignKey('livestock.Livestock', on_delete=CASCADE, verbose_name='Livestock')
