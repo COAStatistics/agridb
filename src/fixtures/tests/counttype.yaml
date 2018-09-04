@@ -11,5 +11,5 @@
 - model: livestock.CountType
   pk: 3
   fields:
-    name: 產乳量
+    name: 在養量
 
