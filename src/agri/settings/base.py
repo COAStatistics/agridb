@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'fallow',
     'smallbig',
     'welfare',
+    'disaster',
 
     # Third app
     'rest_framework',
