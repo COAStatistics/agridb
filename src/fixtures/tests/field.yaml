@@ -1,0 +1,11 @@
+- model: livestock.Field
+  pk: 1
+  fields:
+    name: 英久畜牧場
+    member: 1
+
+- model: livestock.Field
+  pk: 2
+  fields:
+    name: 阿阿阿阿畜牧場
+    member: 1

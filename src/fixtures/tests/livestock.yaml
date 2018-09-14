@@ -1,0 +1,15 @@
+- model: livestock.Livestock
+  pk: 1
+  fields:
+    name: 有色肉雞
+
+- model: livestock.Livestock
+  pk: 2
+  fields:
+    name: 紅羽土雞
+    parent: 1
+
+- model: livestock.Livestock
+  pk: 3
+  fields:
+    name: 乳牛
