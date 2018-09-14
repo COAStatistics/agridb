@@ -45,7 +45,6 @@ INSTALLED_APPS = [
     'disaster',
 
     # Third app
-    'rest_framework',
 ]
 
 MIDDLEWARE = [
