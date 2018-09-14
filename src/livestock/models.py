@@ -30,7 +30,7 @@ class Investigation(Model):
     update_time = DateTimeField(auto_now=True, null=True, blank=True, verbose_name='Updated')
 
     def __str__(self):
-        return self.year
+        return 'year:{0}, season:{1}'.format(self.year, self.season)
 
 
 class CountType(Model):
@@ -59,6 +59,6 @@ class Profile(Model):
     update_time = DateTimeField(auto_now=True, null=True, blank=True, verbose_name='Updated')
 
     def __str__(self):
-        return 'field:{0}, type:{1}, value:{2}'.format(self.field, self.count_type.name, self.value)
+        return 'field:{0}, type:{1}, value:{2}'.format(self.field, self.count_type, self.value)
 
 
