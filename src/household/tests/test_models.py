@@ -16,7 +16,7 @@ class HouseholdTest(TestCase):
         household_number = '60001526489'
         address = "台北市中正區南海路37號"
         models.Household.objects.create(household_number=household_number, address=address)
-#        self.assertEqual(1, models.Household.objects.all().count())
+        self.assertEqual(1, models.Household.objects.all().count())
 
 
 class RoleTest(TestCase):

@@ -18,12 +18,8 @@ class LivestockListCreateAPIView(generics.ListCreateAPIView):
 
 class LivestockRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = serializers.LivestockSerializer
+    queryset = models.Livestock.objects.all()
     permission_class = [IsAuthenticated]
-
-    def get_object(self):
-        pk = self.kwargs.get('pk')
-        instance = models.Livestock.objects.get(id=pk)
-        return instance
 
 
 class InvestigationListCreateAPIView(generics.ListCreateAPIView):
@@ -34,12 +30,8 @@ class InvestigationListCreateAPIView(generics.ListCreateAPIView):
 
 class InvestigationRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = serializers.InvestigationSerializer
+    queryset = models.Investigation.objects.all()
     permission_class = [IsAuthenticated]
-
-    def get_object(self):
-        pk = self.kwargs.get('pk')
-        instance = models.Investigation.objects.get(id=pk)
-        return instance
 
 
 class CountTypeListCreateAPIView(generics.ListCreateAPIView):
@@ -50,12 +42,8 @@ class CountTypeListCreateAPIView(generics.ListCreateAPIView):
 
 class CountTypeRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = serializers.CountTypeSerializer
+    queryset = models.CountType.objects.all()
     permission_class = [IsAuthenticated]
-
-    def get_object(self):
-        pk = self.kwargs.get('pk')
-        instance = models.CountType.objects.get(id=pk)
-        return instance
 
 
 class FieldListCreateAPIView(generics.ListCreateAPIView):
@@ -66,12 +54,8 @@ class FieldListCreateAPIView(generics.ListCreateAPIView):
 
 class FieldRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = serializers.FieldSerializer
+    queryset = models.Field.objects.all()
     permission_class = [IsAuthenticated]
-
-    def get_object(self):
-        pk = self.kwargs.get('pk')
-        instance = models.Field.objects.get(id=pk)
-        return instance
 
 
 class ProfileListCreateAPIView(generics.ListCreateAPIView):
@@ -82,10 +66,5 @@ class ProfileListCreateAPIView(generics.ListCreateAPIView):
 
 class ProfileRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = serializers.ProfileSerializer
+    queryset = models.Profile.objects.all()
     permission_class = [IsAuthenticated]
-
-    def get_object(self):
-        pk = self.kwargs.get('pk')
-        instance = models.Profile.objects.get(id=pk)
-        return instance
-
