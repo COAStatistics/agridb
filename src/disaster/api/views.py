@@ -24,19 +24,11 @@ class DisasterEventListCreateAPIView(generics.ListCreateAPIView):
 
 class DisasterRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = serializers.DisasterSerializer
+    queryset = models.Disaster.objects.all()
     permission_class = [IsAuthenticated]
-
-    def get_object(self):
-        pk = self.kwargs.get('pk')
-        instance = models.Disaster.objects.get(id=pk)
-        return instance
 
 
 class DisasterEventRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = serializers.DisasterEventSerializer
+    queryset = models.DisasterEvent.objects.all()
     permission_class = [IsAuthenticated]
-
-    def get_object(self):
-        pk = self.kwargs.get('pk')
-        instance = models.DisasterEvent.objects.get(id=pk)
-        return instance

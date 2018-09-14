@@ -48,49 +48,29 @@ class TransferCropListCreateAPIView(generics.ListCreateAPIView):
 
 class CropRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = serializers.CropSerializers
+    queryset = Crop.objects.all()
     permission_class = [IsAuthenticated]
-
-    def get_object(self):
-        pk = self.kwargs.get('pk')
-        instance = Crop.objects.get(id=pk)
-        return instance
 
 
 class DeclareRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = serializers.DeclareSerializers
+    queryset = Declare.objects.all()
     permission_class = [IsAuthenticated]
-
-    def get_object(self):
-        pk = self.kwargs.get('pk')
-        instance = Declare.objects.get(id=pk)
-        return instance
 
 
 class RiceAreaRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = serializers.RiceAreaSerializers
+    queryset = RiceArea.objects.all()
     permission_class = [IsAuthenticated]
-
-    def get_object(self):
-        pk = self.kwargs.get('pk')
-        instance = RiceArea.objects.get(id=pk)
-        return instance
 
 
 class FallowTransferRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = serializers.FallowTransferSerializers
+    queryset = FallowTransfer.objects.all()
     permission_class = [IsAuthenticated]
-
-    def get_object(self):
-        pk = self.kwargs.get('pk')
-        instance = FallowTransfer.objects.get(id=pk)
-        return instance
 
 
 class TransferCropRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = serializers.TransferCropSerializers
+    queryset = TransferCrop.objects.all()
     permission_class = [IsAuthenticated]
-
-    def get_object(self):
-        pk = self.kwargs.get('pk')
-        instance = TransferCrop.objects.get(id=pk)
-        return instance

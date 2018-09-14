@@ -8,12 +8,6 @@ class HouseholdSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Household
         fields = '__all__'
-        # fields = [
-        #     'id',
-        #     'household_number',
-        #     'address',
-        #     'update_time',
-        # ]
 
 
 class RoleSerializer(serializers.ModelSerializer):

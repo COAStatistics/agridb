@@ -37,29 +37,17 @@ class ScholarshipListCreateAPIView(generics.ListCreateAPIView):
 
 class ElderlyAllowanceRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = serializers.ElderlyAllowanceSerializer
+    queryset = ElderlyAllowance.objects.all()
     permission_class = [IsAuthenticated]
-
-    def get_object(self):
-        pk = self.kwargs.get('pk')
-        instance = ElderlyAllowance.objects.get(id=pk)
-        return instance
 
 
 class FarmerInsuranceRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = serializers.FarmerInsuranceSerializer
+    queryset = FarmerInsurance.objects.all()
     permission_class = [IsAuthenticated]
-
-    def get_object(self):
-        pk = self.kwargs.get('pk')
-        instance = FarmerInsurance.objects.get(id=pk)
-        return instance
 
 
 class ScholarshipRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = serializers.ScholarshipSerializer
+    queryset = Scholarship.objects.all()
     permission_class = [IsAuthenticated]
-
-    def get_object(self):
-        pk = self.kwargs.get('pk')
-        instance = Scholarship.objects.get(id=pk)
-        return instance
