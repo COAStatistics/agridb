@@ -1,0 +1,28 @@
+- model: disaster.disaster
+  pk: 1
+  fields:
+    member: 1
+    event: 1
+    crop: 1
+    area: 35
+    subsidy: 2500
+
+
+- model: disaster.disaster
+  pk: 2
+  fields:
+    member: 2
+    event: 2
+    crop: 2
+    area: 12
+    subsidy: 0
+
+
+- model: disaster.Disaster
+  pk: 3
+  fields:
+    member: 3
+    event: 3
+    crop: 3
+    area: 60
+    subsidy: 10000
