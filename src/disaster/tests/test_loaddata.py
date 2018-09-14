@@ -22,7 +22,7 @@ class DisasterTestCase(TestCase):
         call_command('loaddata', 'tests/disaster.yaml', verbosity=0)
 
     def test_loaddata(self):
-        print("Start test loaddata")
+        print("Start tests loaddata")
         disaster = models.Disaster.objects.all()
         disasterevent = models.DisasterEvent.objects.all()
 
