@@ -19,26 +19,26 @@ class CropSerializers(ModelSerializer):
 class DeclareSerializers(ModelSerializer):
 
     class Meta:
-        model = Crop
+        model = Declare
         fields = '__all__'
 
 
 class RiceAreaSerializers(ModelSerializer):
 
     class Meta:
-        model = Crop
+        model = RiceArea
         fields = '__all__'
 
 
 class FallowTransferSerializers(ModelSerializer):
 
     class Meta:
-        model = Crop
+        model = FallowTransfer
         fields = '__all__'
 
 
 class TransferCropSerializers(ModelSerializer):
 
     class Meta:
-        model = Crop
+        model = TransferCrop
         fields = '__all__'
