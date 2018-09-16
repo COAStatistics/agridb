@@ -35,7 +35,7 @@ class FallowTransferListCreateAPIView(generics.ListCreateAPIView):
 
 
 class TransferCropListCreateAPIView(generics.ListCreateAPIView):
-    serializer_class = serializers.TransferCrop
+    serializer_class = serializers.TransferCropSerializers
     queryset = TransferCrop.objects.all()
     permission_class = [IsAuthenticated]
 
