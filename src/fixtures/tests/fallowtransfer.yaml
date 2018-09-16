@@ -1,0 +1,23 @@
+- model: fallow.FallowTransfer
+  pk: 1
+  fields:
+    member: 1
+    crop: 1
+    subsidy: 3000
+    period: 1
+
+- model: fallow.FallowTransfer
+  pk: 2
+  fields:
+    member: 2
+    crop: 2
+    subsidy: 3000
+    period: 1
+
+- model: fallow.FallowTransfer
+  pk: 3
+  fields:
+    member: 3
+    crop: 3
+    subsidy: 3000
+    period: 1
