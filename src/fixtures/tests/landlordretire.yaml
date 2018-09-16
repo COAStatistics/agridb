@@ -1,0 +1,14 @@
+- model: smallbig.LandlordRetire
+  pk: 1
+  fields:
+    member: 1
+
+- model: smallbig.LandlordRetire
+  pk: 2
+  fields:
+    member: 2
+
+- model: smallbig.LandlordRetire
+  pk: 3
+  fields:
+    member: 3

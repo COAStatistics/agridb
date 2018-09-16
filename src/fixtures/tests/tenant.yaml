@@ -1,0 +1,6 @@
+- model: smallbig.Tenant
+  pk: 1
+  fields:
+    member: 1
+    owner: 2
+

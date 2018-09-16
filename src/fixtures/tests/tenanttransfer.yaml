@@ -1,0 +1,17 @@
+- model: smallbig.TenantTransfer
+  pk: 1
+  fields:
+    member: 1
+    subsidy: 5000
+
+- model: smallbig.TenantTransfer
+  pk: 2
+  fields:
+    member: 2
+    subsidy: 6000
+
+- model: smallbig.TenantTransfer
+  pk: 3
+  fields:
+    member: 3
+    subsidy: 7000
