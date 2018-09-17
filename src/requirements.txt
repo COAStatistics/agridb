@@ -1,4 +1,8 @@
-Django==2.0.6
+Django==2.0.8
 djangorestframework==3.8.2
 pytz==2018.5
 PyYAML==3.13
+wfastcgi==3.0.0
+django-pyodbc-azure==2.0.8.0
+pyodbc==4.0.24
+whitenoise==4.1
