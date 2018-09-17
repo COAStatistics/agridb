@@ -1,0 +1,17 @@
+- model: smallbig.LandlordRent
+  pk: 1
+  fields:
+    member: 1
+    subsidy: 1000
+
+- model: smallbig.LandlordRent
+  pk: 2
+  fields:
+    member: 2
+    subsidy: 2000
+
+- model: smallbig.LandlordRent
+  pk: 3
+  fields:
+    member: 3
+    subsidy: 3000

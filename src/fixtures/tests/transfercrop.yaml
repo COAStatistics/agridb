@@ -1,0 +1,17 @@
+- model: fallow.TransferCrop
+  pk: 1
+  fields:
+    rice_area: 1
+    crop: 4
+
+- model: fallow.TransferCrop
+  pk: 2
+  fields:
+    rice_area: 2
+    crop: 5
+
+- model: fallow.TransferCrop
+  pk: 3
+  fields:
+    rice_area: 3
+    crop: 6

@@ -15,7 +15,7 @@ class Declare(models.Model):
     update_time = models.DateTimeField(auto_now=True, auto_now_add=False, null=True, blank=True, verbose_name='Updated')
 
     def __str__(self):
-        return self.member
+        return str(self.member)
 
 
 class RiceArea(models.Model):
