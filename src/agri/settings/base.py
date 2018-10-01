@@ -46,6 +46,7 @@ INSTALLED_APPS = [
 
     # Third app
     'rest_framework',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
@@ -129,3 +130,13 @@ FIXTURE_DIRS = [
     os.path.join(BASE_DIR, 'fixtures'),
     os.path.join(BASE_DIR, 'fixtures/tests'),
 ]
+
+
+# rest_framework
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
+    )
+}
