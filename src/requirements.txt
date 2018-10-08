@@ -1,4 +1,4 @@
-django==2.1
+django==2.1.2
 djangorestframework==3.8.2
 pytz==2018.5
 PyYAML==3.13
