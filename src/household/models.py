@@ -4,7 +4,7 @@ from django.db import models
 
 
 class Household(models.Model):
-    household_number = models.CharField(max_length=20, null=True)
+    household_number = models.CharField(max_length=20, null=True, unique=True)
     address = models.CharField(max_length=255, null=True)
     update_time = models.DateTimeField(auto_now=True)
 
@@ -13,7 +13,7 @@ class Household(models.Model):
 
 
 class Role(models.Model):
-    name = models.CharField(max_length=20, null=True)
+    name = models.CharField(max_length=20, null=True, unique=True)
     update_time = models.DateTimeField(auto_now=True)
 
     def __str__(self):
@@ -23,7 +23,7 @@ class Role(models.Model):
 class Member(models.Model):
     household = models.ForeignKey('household.Household', on_delete=models.CASCADE)
     role = models.ForeignKey('household.Role', on_delete=models.CASCADE)
-    app_id = models.CharField(max_length=10)
+    app_id = models.CharField(max_length=10, unique=True)
     name = models.CharField(max_length=50, null=True)
     birth = models.DateField(null=True)
     update_time = models.DateTimeField(auto_now=True)
