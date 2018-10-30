@@ -88,35 +88,32 @@ class MemberListCreateAPIView(generics.ListCreateAPIView):
 
         # setting
         self.page = request.query_params.get('page', None)
-        self.household = request.query_params.get('household', None)
-        self.role = request.query_params.get('role', None)
-        self.name = request.query_params.get('name', '')
-        self.appid = request.query_params.get('appid', '')
+        self.household = request.query_params.get('household', '')
+        self.role = request.query_params.get('role', '')
+        self.name = request.query_params.get('name', None)
+        self.app_id = request.query_params.get('app_id', '')
 
     def list(self, request, *args, **kwargs):
         queryset = self.filter_queryset(self.get_queryset())
 
-        if self.household is not None:
-            try:
-                household = models.Household.objects.filter(household_number__icontains=self.household)
-            except:
-                self.household = None
-
-        if self.role is not None:
-            try:
-                role = models.Role.objects.filter(name__icontains=self.role)
-            except:
-                self.role = None
-
-        queryset = queryset.filter(
-            Q(name__icontains=self.name) &
-            Q(app_id__icontains=self.appid)
-        )
-
-        if self.household is not None:
+        if self.household is not '':
+            household = models.Household.objects.filter(household_number__icontains=self.household)
             queryset = queryset.filter(household__in=household)
-        if self.role is not None:
+
+        if self.role is not '':
+            role = models.Role.objects.filter(name__icontains=self.role)
             queryset = queryset.filter(role__in=role)
+
+        if self.name is not None:
+            queryset = queryset.filter(
+                Q(name__icontains=self.name) &
+                Q(app_id__icontains=self.app_id)
+            )
+        else:
+            queryset = queryset.filter(
+                Q(name__isnull=True) |
+                Q(name__isnull=False)
+            ).filter(app_id__icontains=self.app_id)
 
         page = self.paginate_queryset(queryset)
         if page is not None:
