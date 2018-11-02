@@ -26,6 +26,7 @@ class Member(models.Model):
     app_id = models.CharField(max_length=10, unique=True)
     name = models.CharField(max_length=50, null=True)
     birth = models.DateField(null=True)
+    code = models.PositiveIntegerField(null=True)
     update_time = models.DateTimeField(auto_now=True)
 
     def __str__(self):
