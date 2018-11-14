@@ -6,6 +6,7 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
 from livestock import models
+from household.api.views import ThousandPagination
 
 from . import serializers
 
@@ -14,6 +15,7 @@ class LivestockListCreateAPIView(generics.ListCreateAPIView):
     serializer_class = serializers.LivestockSerializer
     queryset = models.Livestock.objects.all()
     permission_classes = [IsAuthenticated]
+    pagination_class = ThousandPagination
 
 
 class LivestockRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
@@ -26,6 +28,7 @@ class InvestigationListCreateAPIView(generics.ListCreateAPIView):
     serializer_class = serializers.InvestigationSerializer
     queryset = models.Investigation.objects.all()
     permission_classes = [IsAuthenticated]
+    pagination_class = ThousandPagination
 
 
 class InvestigationRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
@@ -38,6 +41,7 @@ class CountTypeListCreateAPIView(generics.ListCreateAPIView):
     serializer_class = serializers.CountTypeSerializer
     queryset = models.CountType.objects.all()
     permission_classes = [IsAuthenticated]
+    pagination_class = ThousandPagination
 
 
 class CountTypeRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
@@ -50,6 +54,7 @@ class FieldListCreateAPIView(generics.ListCreateAPIView):
     serializer_class = serializers.FieldSerializer
     queryset = models.Field.objects.all()
     permission_classes = [IsAuthenticated]
+    pagination_class = ThousandPagination
 
 
 class FieldRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
@@ -62,6 +67,7 @@ class ProfileListCreateAPIView(generics.ListCreateAPIView):
     serializer_class = serializers.ProfileSerializer
     queryset = models.Profile.objects.all()
     permission_classes = [IsAuthenticated]
+    pagination_class = ThousandPagination
 
 
 class ProfileRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
