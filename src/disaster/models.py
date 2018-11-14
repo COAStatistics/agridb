@@ -6,17 +6,19 @@ from django.db.models import (
     CASCADE,
     PositiveIntegerField,
     DateTimeField,
+    DateField,
 )
 
 # Create your models here.
 
 
 class DisasterEvent(Model):
-    name = CharField(max_length=50, verbose_name='Name')
+    name = CharField(max_length=50, verbose_name='Name', unique=True)
+    date = DateField(auto_now=False, auto_now_add=False, null=False, default='1911-01-01')
     update_time = DateTimeField(auto_now=True, auto_now_add=False, null=True, blank=True, verbose_name='Updated')
 
     def __str__(self):
-        return self.name
+        return "Name:{}, Date:{}".format(self.name, self.date)
 
 
 class Disaster(Model):
