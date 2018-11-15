@@ -133,6 +133,13 @@ class MemberListCreateAPIView(generics.ListCreateAPIView):
         return Response(serializer.data)
 
 
+class YearListCreateAPIView(generics.ListCreateAPIView):
+    serializer_class = serializers.YearSerializer
+    queryset = models.Year.objects.all()
+    permission_classes = [IsAuthenticated]
+    pagination_class = ThousandPagination
+
+
 class HouseholdRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = serializers.HouseholdSerializer
     queryset = models.Household.objects.all()
@@ -148,4 +155,10 @@ class RoleRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
 class MemberRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = serializers.MemberSerializer
     queryset = models.Member.objects.all()
+    permission_classes = [IsAuthenticated]
+
+
+class YearRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
+    serializer_class = serializers.YearSerializer
+    queryset = models.Year.objects.all()
     permission_classes = [IsAuthenticated]
