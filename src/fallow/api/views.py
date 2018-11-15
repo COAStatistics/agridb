@@ -8,36 +8,42 @@ from fallow.models import (
     TransferCrop,
 )
 from . import serializers
+from household.api.views import ThousandPagination
 
 
 class CropListCreateAPIView(generics.ListCreateAPIView):
     serializer_class = serializers.CropSerializers
     queryset = Crop.objects.all()
     permission_classes = [IsAuthenticated]
+    pagination_class = ThousandPagination
 
 
 class DeclareListCreateAPIView(generics.ListCreateAPIView):
     serializer_class = serializers.DeclareSerializers
     queryset = Declare.objects.all()
     permission_classes = [IsAuthenticated]
+    pagination_class = ThousandPagination
 
 
 class RiceAreaListCreateAPIView(generics.ListCreateAPIView):
     serializer_class = serializers.RiceAreaSerializers
     queryset = RiceArea.objects.all()
     permission_classes = [IsAuthenticated]
+    pagination_class = ThousandPagination
 
 
 class FallowTransferListCreateAPIView(generics.ListCreateAPIView):
     serializer_class = serializers.FallowTransferSerializers
     queryset = FallowTransfer.objects.all()
     permission_classes = [IsAuthenticated]
+    pagination_class = ThousandPagination
 
 
 class TransferCropListCreateAPIView(generics.ListCreateAPIView):
     serializer_class = serializers.TransferCropSerializers
     queryset = TransferCrop.objects.all()
     permission_classes = [IsAuthenticated]
+    pagination_class = ThousandPagination
 
 
 class CropRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
