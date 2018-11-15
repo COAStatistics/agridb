@@ -3,6 +3,7 @@ from django.db import models
 
 class Crop(models.Model):
     name = models.CharField(max_length=50, verbose_name='Name')
+    code = models.CharField(max_length=50, verbose_name='Code', unique=True, default='default')
     parent = models.ForeignKey('self', null=True, on_delete=models.CASCADE, verbose_name='Parent')
     update_time = models.DateTimeField(auto_now=True, auto_now_add=False, null=True, blank=True, verbose_name='Updated')
 
