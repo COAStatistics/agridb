@@ -1,3149 +1,3149 @@
-- code: '1'
-  fields:
+- fields:
+    code: '1'
     name: 水稻
     parent: null
   model: fallow.Crop
   pk: 1
-- code: '2'
-  fields:
+- fields:
+    code: '2'
     name: 契作原料甘蔗
     parent: null
   model: fallow.Crop
   pk: 2
-- code: '3'
-  fields:
+- fields:
+    code: '3'
     name: 保價玉米
     parent: null
   model: fallow.Crop
   pk: 3
-- code: '4'
-  fields:
+- fields:
+    code: '4'
     name: 景觀波斯菊
     parent: null
   model: fallow.Crop
   pk: 4
-- code: '7'
-  fields:
+- fields:
+    code: '7'
     name: 能源
     parent: null
   model: fallow.Crop
   pk: 5
-- code: '8'
-  fields:
+- fields:
+    code: '8'
     name: 雜項及特用--牧草
     parent: null
   model: fallow.Crop
   pk: 6
-- code: A
-  fields:
+- fields:
+    code: A
     name: 契作小麥等
     parent: null
   model: fallow.Crop
   pk: 7
-- code: B
-  fields:
+- fields:
+    code: B
     name: 非基改大豆
     parent: null
   model: fallow.Crop
   pk: 8
-- code: C
-  fields:
+- fields:
+    code: C
     name: 牧草或青割玉米
     parent: null
   model: fallow.Crop
   pk: 9
-- code: D
-  fields:
+- fields:
+    code: D
     name: 原料甘蔗
     parent: null
   model: fallow.Crop
   pk: 10
-- code: E
-  fields:
+- fields:
+    code: E
     name: 短期經濟林(6年)
     parent: null
   model: fallow.Crop
   pk: 11
-- code: F
-  fields:
+- fields:
+    code: F
     name: 釀酒高粱、飼料甘藷
     parent: null
   model: fallow.Crop
   pk: 12
-- code: G
-  fields:
+- fields:
+    code: G
     name: 契作毛豆等作物
     parent: null
   model: fallow.Crop
   pk: 13
-- code: H
-  fields:
+- fields:
+    code: H
     name: 種植綠肥
     parent: null
   model: fallow.Crop
   pk: 14
-- code: I
-  fields:
+- fields:
+    code: I
     name: 翻耕或綠肥作物成活率
     parent: null
   model: fallow.Crop
   pk: 15
-- code: J
-  fields:
+- fields:
+    code: J
     name: 蓄水因地制宜措施
     parent: null
   model: fallow.Crop
   pk: 16
-- code: K
-  fields:
+- fields:
+    code: K
     name: 景觀作物
     parent: null
   model: fallow.Crop
   pk: 17
-- code: L
-  fields:
+- fields:
+    code: L
     name: 特殊地區休耕
     parent: null
   model: fallow.Crop
   pk: 18
-- code: M
-  fields:
+- fields:
+    code: M
     name: 出租翻耕
     parent: null
   model: fallow.Crop
   pk: 19
-- code: N
-  fields:
+- fields:
+    code: N
     name: 有機作物
     parent: null
   model: fallow.Crop
   pk: 20
-- code: O
-  fields:
+- fields:
+    code: O
     name: 地區特產
     parent: null
   model: fallow.Crop
   pk: 21
-- code: P
-  fields:
+- fields:
+    code: P
     name: 特殊地區翻耕
     parent: null
   model: fallow.Crop
   pk: 22
-- code: Q
-  fields:
+- fields:
+    code: Q
     name: 契作油茶及茶
     parent: null
   model: fallow.Crop
   pk: 23
-- code: R
-  fields:
+- fields:
+    code: R
     name: 契作硬質玉米
     parent: null
   model: fallow.Crop
   pk: 24
-- code: S
-  fields:
+- fields:
+    code: S
     name: 綠肥(特殊期)
     parent: null
   model: fallow.Crop
   pk: 25
-- code: T
-  fields:
+- fields:
+    code: T
     name: 翻耕(特殊期)
     parent: null
   model: fallow.Crop
   pk: 26
-- code: U
-  fields:
+- fields:
+    code: U
     name: 契作油茶及茶(第7與8期)
     parent: null
   model: fallow.Crop
   pk: 27
-- code: W
-  fields:
+- fields:
+    code: W
     name: 非獎勵作物
     parent: null
   model: fallow.Crop
   pk: 28
-- code: X
-  fields:
+- fields:
+    code: X
     name: 自行復耕
     parent: null
   model: fallow.Crop
   pk: 29
-- code: 停
-  fields:
+- fields:
+    code: 停
     name: 停止補貼
     parent: null
   model: fallow.Crop
   pk: 30
-- code: 無
-  fields:
+- fields:
+    code: 無
     name: 無補貼
     parent: null
   model: fallow.Crop
   pk: 31
-- code: '541'
-  fields:
+- fields:
+    code: '541'
     name: 能源大豆
     parent: 5
   model: fallow.Crop
   pk: 32
-- code: '543'
-  fields:
+- fields:
+    code: '543'
     name: 能源油菜
     parent: 5
   model: fallow.Crop
   pk: 33
-- code: '721'
-  fields:
+- fields:
+    code: '721'
     name: 蘇丹草(契作)
     parent: 6
   model: fallow.Crop
   pk: 34
-- code: '722'
-  fields:
+- fields:
+    code: '722'
     name: 盤固拉草(契作)
     parent: 6
   model: fallow.Crop
   pk: 35
-- code: '723'
-  fields:
+- fields:
+    code: '723'
     name: 狼尾草(契作)
     parent: 6
   model: fallow.Crop
   pk: 36
-- code: '724'
-  fields:
+- fields:
+    code: '724'
     name: 尼羅草(契作)
     parent: 6
   model: fallow.Crop
   pk: 37
-- code: '725'
-  fields:
+- fields:
+    code: '725'
     name: 青割玉米(契作)
     parent: 6
   model: fallow.Crop
   pk: 38
-- code: '726'
-  fields:
+- fields:
+    code: '726'
     name: 芻料用高粱(契作)
     parent: 6
   model: fallow.Crop
   pk: 39
-- code: '727'
-  fields:
+- fields:
+    code: '727'
     name: 其他牧草(契作)
     parent: 6
   model: fallow.Crop
   pk: 40
-- code: '003'
-  fields:
+- fields:
+    code: '003'
     name: 契作小麥
     parent: 7
   model: fallow.Crop
   pk: 41
-- code: '017'
-  fields:
+- fields:
+    code: '017'
     name: 契作胡麻
     parent: 7
   model: fallow.Crop
   pk: 42
-- code: 018
-  fields:
+- fields:
+    code: 018
     name: 契作薏苡
     parent: 7
   model: fallow.Crop
   pk: 43
-- code: 019
-  fields:
+- fields:
+    code: 019
     name: 契作蕎麥
     parent: 7
   model: fallow.Crop
   pk: 44
-- code: '020'
-  fields:
+- fields:
+    code: '020'
     name: 契作仙草
     parent: 7
   model: fallow.Crop
   pk: 45
-- code: 029
-  fields:
+- fields:
+    code: 029
     name: 契作小麥(苑里豆麥)
     parent: 7
   model: fallow.Crop
   pk: 46
-- code: '027'
-  fields:
+- fields:
+    code: '027'
     name: 契作大豆 (義竹黑豆)
     parent: 8
   model: fallow.Crop
   pk: 47
-- code: 028
-  fields:
+- fields:
+    code: 028
     name: 契作大豆(黑豆)
     parent: 8
   model: fallow.Crop
   pk: 48
-- code: '712'
-  fields:
+- fields:
+    code: '712'
     name: 契作牧草
     parent: 9
   model: fallow.Crop
   pk: 49
-- code: '713'
-  fields:
+- fields:
+    code: '713'
     name: 契作牧草(燕麥)
     parent: 9
   model: fallow.Crop
   pk: 50
-- code: '716'
-  fields:
+- fields:
+    code: '716'
     name: 契作青割玉米
     parent: 9
   model: fallow.Crop
   pk: 51
-- code: '991'
-  fields:
+- fields:
+    code: '991'
     name: 契作甘蔗
     parent: 10
   model: fallow.Crop
   pk: 52
-- code: '996'
-  fields:
+- fields:
+    code: '996'
     name: 短期經濟林
     parent: 11
   model: fallow.Crop
   pk: 53
-- code: '013'
-  fields:
+- fields:
+    code: '013'
     name: 契作結球萵苣
     parent: 12
   model: fallow.Crop
   pk: 54
-- code: '014'
-  fields:
+- fields:
+    code: '014'
     name: 契作胡蘿蔔
     parent: 12
   model: fallow.Crop
   pk: 55
-- code: '205'
-  fields:
+- fields:
+    code: '205'
     name: 契作飼料甘藷
     parent: 12
   model: fallow.Crop
   pk: 56
-- code: '981'
-  fields:
+- fields:
+    code: '981'
     name: 契作高粱
     parent: 12
   model: fallow.Crop
   pk: 57
-- code: '479'
-  fields:
+- fields:
+    code: '479'
     name: 契作毛豆
     parent: 13
   model: fallow.Crop
   pk: 58
-- code: '501'
-  fields:
+- fields:
+    code: '501'
     name: 大菜
     parent: 14
   model: fallow.Crop
   pk: 59
-- code: '502'
-  fields:
+- fields:
+    code: '502'
     name: 田菁
     parent: 14
   model: fallow.Crop
   pk: 60
-- code: '503'
-  fields:
+- fields:
+    code: '503'
     name: 大豆類(綠肥)
     parent: 14
   model: fallow.Crop
   pk: 61
-- code: '506'
-  fields:
+- fields:
+    code: '506'
     name: 紫雲英
     parent: 14
   model: fallow.Crop
   pk: 62
-- code: '507'
-  fields:
+- fields:
+    code: '507'
     name: 富貴豆(虎爪豆)
     parent: 14
   model: fallow.Crop
   pk: 63
-- code: '508'
-  fields:
+- fields:
+    code: '508'
     name: 太陽麻
     parent: 14
   model: fallow.Crop
   pk: 64
-- code: '512'
-  fields:
+- fields:
+    code: '512'
     name: 埃及三葉草
     parent: 14
   model: fallow.Crop
   pk: 65
-- code: '513'
-  fields:
+- fields:
+    code: '513'
     name: 青皮豆
     parent: 14
   model: fallow.Crop
   pk: 66
-- code: '519'
-  fields:
+- fields:
+    code: '519'
     name: 苕子
     parent: 14
   model: fallow.Crop
   pk: 67
-- code: '520'
-  fields:
+- fields:
+    code: '520'
     name: 其他綠肥
     parent: 14
   model: fallow.Crop
   pk: 68
-- code: '518'
-  fields:
+- fields:
+    code: '518'
     name: 休耕〈翻耕〉
     parent: 15
   model: fallow.Crop
   pk: 69
-- code: '522'
-  fields:
+- fields:
+    code: '522'
     name: 水源涵養
     parent: 16
   model: fallow.Crop
   pk: 70
-- code: '586'
-  fields:
+- fields:
+    code: '586'
     name: 紅火蟻防治
     parent: 16
   model: fallow.Crop
   pk: 71
-- code: '587'
-  fields:
+- fields:
+    code: '587'
     name: 再生綠肥
     parent: 16
   model: fallow.Crop
   pk: 72
-- code: '588'
-  fields:
+- fields:
+    code: '588'
     name: 綠化場
     parent: 16
   model: fallow.Crop
   pk: 73
-- code: '525'
-  fields:
+- fields:
+    code: '525'
     name: 大波斯菊
     parent: 17
   model: fallow.Crop
   pk: 74
-- code: '526'
-  fields:
+- fields:
+    code: '526'
     name: 黃波斯菊
     parent: 17
   model: fallow.Crop
   pk: 75
-- code: '527'
-  fields:
+- fields:
+    code: '527'
     name: 青葙
     parent: 17
   model: fallow.Crop
   pk: 76
-- code: '528'
-  fields:
+- fields:
+    code: '528'
     name: 小油菊
     parent: 17
   model: fallow.Crop
   pk: 77
-- code: '529'
-  fields:
+- fields:
+    code: '529'
     name: 百日草
     parent: 17
   model: fallow.Crop
   pk: 78
-- code: '530'
-  fields:
+- fields:
+    code: '530'
     name: 其他景觀作物
     parent: 17
   model: fallow.Crop
   pk: 79
-- code: '531'
-  fields:
+- fields:
+    code: '531'
     name: 萬壽菊
     parent: 17
   model: fallow.Crop
   pk: 80
-- code: '544'
-  fields:
+- fields:
+    code: '544'
     name: 景觀向日葵(景觀)
     parent: 17
   model: fallow.Crop
   pk: 81
-- code: '521'
-  fields:
+- fields:
+    code: '521'
     name: 特殊地休耕
     parent: 18
   model: fallow.Crop
   pk: 82
-- code: '999'
-  fields:
+- fields:
+    code: '999'
     name: 其他有機作物
     parent: 20
   model: fallow.Crop
   pk: 83
-- code: '004'
-  fields:
+- fields:
+    code: '004'
     name: 粟
     parent: 21
   model: fallow.Crop
   pk: 84
-- code: '005'
-  fields:
+- fields:
+    code: '005'
     name: 蜀黍(高粱)
     parent: 21
   model: fallow.Crop
   pk: 85
-- code: '006'
-  fields:
+- fields:
+    code: '006'
     name: 大麥
     parent: 21
   model: fallow.Crop
   pk: 86
-- code: '007'
-  fields:
+- fields:
+    code: '007'
     name: 黍
     parent: 21
   model: fallow.Crop
   pk: 87
-- code: 008
-  fields:
+- fields:
+    code: 008
     name: 蕎麥
     parent: 21
   model: fallow.Crop
   pk: 88
-- code: 009
-  fields:
+- fields:
+    code: 009
     name: 薏苡
     parent: 21
   model: fallow.Crop
   pk: 89
-- code: '011'
-  fields:
+- fields:
+    code: '011'
     name: 小米
     parent: 21
   model: fallow.Crop
   pk: 90
-- code: '012'
-  fields:
+- fields:
+    code: '012'
     name: 多納黑米
     parent: 21
   model: fallow.Crop
   pk: 91
-- code: '015'
-  fields:
+- fields:
+    code: '015'
     name: 小麥
     parent: 21
   model: fallow.Crop
   pk: 92
-- code: '016'
-  fields:
+- fields:
+    code: '016'
     name: 契作鳳梨
     parent: 21
   model: fallow.Crop
   pk: 93
-- code: 098
-  fields:
+- fields:
+    code: 098
     name: 食用玉米
     parent: 21
   model: fallow.Crop
   pk: 94
-- code: 099
-  fields:
+- fields:
+    code: 099
     name: 其他穀類
     parent: 21
   model: fallow.Crop
   pk: 95
-- code: '101'
-  fields:
+- fields:
+    code: '101'
     name: 大豆
     parent: 21
   model: fallow.Crop
   pk: 96
-- code: '102'
-  fields:
+- fields:
+    code: '102'
     name: 落花生
     parent: 21
   model: fallow.Crop
   pk: 97
-- code: '103'
-  fields:
+- fields:
+    code: '103'
     name: 花豆
     parent: 21
   model: fallow.Crop
   pk: 98
-- code: '104'
-  fields:
+- fields:
+    code: '104'
     name: 紅豆
     parent: 21
   model: fallow.Crop
   pk: 99
-- code: '105'
-  fields:
+- fields:
+    code: '105'
     name: 綠豆
     parent: 21
   model: fallow.Crop
   pk: 100
-- code: '106'
-  fields:
+- fields:
+    code: '106'
     name: 米豆
     parent: 21
   model: fallow.Crop
   pk: 101
-- code: '107'
-  fields:
+- fields:
+    code: '107'
     name: 蠶豆
     parent: 21
   model: fallow.Crop
   pk: 102
-- code: '108'
-  fields:
+- fields:
+    code: '108'
     name: 菜豆(四季豆,敏豆)
     parent: 21
   model: fallow.Crop
   pk: 103
-- code: '128'
-  fields:
+- fields:
+    code: '128'
     name: 黑豆
     parent: 21
   model: fallow.Crop
   pk: 104
-- code: '129'
-  fields:
+- fields:
+    code: '129'
     name: 黃豆
     parent: 21
   model: fallow.Crop
   pk: 105
-- code: '130'
-  fields:
+- fields:
+    code: '130'
     name: 荷蘭豆
     parent: 21
   model: fallow.Crop
   pk: 106
-- code: '131'
-  fields:
+- fields:
+    code: '131'
     name: 萊豆(皇帝豆)
     parent: 21
   model: fallow.Crop
   pk: 107
-- code: '132'
-  fields:
+- fields:
+    code: '132'
     name: 翼豆
     parent: 21
   model: fallow.Crop
   pk: 108
-- code: '199'
-  fields:
+- fields:
+    code: '199'
     name: 其他豆類
     parent: 21
   model: fallow.Crop
   pk: 109
-- code: '201'
-  fields:
+- fields:
+    code: '201'
     name: 甘藷
     parent: 21
   model: fallow.Crop
   pk: 110
-- code: '202'
-  fields:
+- fields:
+    code: '202'
     name: 樹薯
     parent: 21
   model: fallow.Crop
   pk: 111
-- code: '203'
-  fields:
+- fields:
+    code: '203'
     name: 馬鈴薯
     parent: 21
   model: fallow.Crop
   pk: 112
-- code: '204'
-  fields:
+- fields:
+    code: '204'
     name: 其他薯類
     parent: 21
   model: fallow.Crop
   pk: 113
-- code: '206'
-  fields:
+- fields:
+    code: '206'
     name: 葉用甘藷
     parent: 21
   model: fallow.Crop
   pk: 114
-- code: '239'
-  fields:
+- fields:
+    code: '239'
     name: 福香
     parent: 21
   model: fallow.Crop
   pk: 115
-- code: '240'
-  fields:
+- fields:
+    code: '240'
     name: 羅勒(九層塔)
     parent: 21
   model: fallow.Crop
   pk: 116
-- code: '241'
-  fields:
+- fields:
+    code: '241'
     name: 樹豆
     parent: 21
   model: fallow.Crop
   pk: 117
-- code: '246'
-  fields:
+- fields:
+    code: '246'
     name: 紅蓮蕉
     parent: 21
   model: fallow.Crop
   pk: 118
-- code: '253'
-  fields:
+- fields:
+    code: '253'
     name: 朝鮮草
     parent: 21
   model: fallow.Crop
   pk: 119
-- code: '254'
-  fields:
+- fields:
+    code: '254'
     name: 百慕達草
     parent: 21
   model: fallow.Crop
   pk: 120
-- code: '255'
-  fields:
+- fields:
+    code: '255'
     name: 假儉草
     parent: 21
   model: fallow.Crop
   pk: 121
-- code: '256'
-  fields:
+- fields:
+    code: '256'
     name: 臺北草
     parent: 21
   model: fallow.Crop
   pk: 122
-- code: '293'
-  fields:
+- fields:
+    code: '293'
     name: 蒟蒻
     parent: 21
   model: fallow.Crop
   pk: 123
-- code: '294'
-  fields:
+- fields:
+    code: '294'
     name: 艾草
     parent: 21
   model: fallow.Crop
   pk: 124
-- code: '299'
-  fields:
+- fields:
+    code: '299'
     name: 其他雜項
     parent: 21
   model: fallow.Crop
   pk: 125
-- code: '301'
-  fields:
+- fields:
+    code: '301'
     name: 胡麻(芝麻)
     parent: 21
   model: fallow.Crop
   pk: 126
-- code: '302'
-  fields:
+- fields:
+    code: '302'
     name: 棉花
     parent: 21
   model: fallow.Crop
   pk: 127
-- code: '303'
-  fields:
+- fields:
+    code: '303'
     name: 向日葵
     parent: 21
   model: fallow.Crop
   pk: 128
-- code: '304'
-  fields:
+- fields:
+    code: '304'
     name: 油菜子
     parent: 21
   model: fallow.Crop
   pk: 129
-- code: '305'
-  fields:
+- fields:
+    code: '305'
     name: 茶
     parent: 21
   model: fallow.Crop
   pk: 130
-- code: '306'
-  fields:
+- fields:
+    code: '306'
     name: 食用甘蔗
     parent: 21
   model: fallow.Crop
   pk: 131
-- code: '308'
-  fields:
+- fields:
+    code: '308'
     name: 香水茅
     parent: 21
   model: fallow.Crop
   pk: 132
-- code: '309'
-  fields:
+- fields:
+    code: '309'
     name: 洛神葵
     parent: 21
   model: fallow.Crop
   pk: 133
-- code: '310'
-  fields:
+- fields:
+    code: '310'
     name: 貴黍
     parent: 21
   model: fallow.Crop
   pk: 134
-- code: '311'
-  fields:
+- fields:
+    code: '311'
     name: 仙草
     parent: 21
   model: fallow.Crop
   pk: 135
-- code: '312'
-  fields:
+- fields:
+    code: '312'
     name: 紫蘇
     parent: 21
   model: fallow.Crop
   pk: 136
-- code: '313'
-  fields:
+- fields:
+    code: '313'
     name: 圓藺草
     parent: 21
   model: fallow.Crop
   pk: 137
-- code: '320'
-  fields:
+- fields:
+    code: '320'
     name: 其他短期特用
     parent: 21
   model: fallow.Crop
   pk: 138
-- code: '321'
-  fields:
+- fields:
+    code: '321'
     name: 大甲藺
     parent: 21
   model: fallow.Crop
   pk: 139
-- code: '322'
-  fields:
+- fields:
+    code: '322'
     name: 三角藺
     parent: 21
   model: fallow.Crop
   pk: 140
-- code: '325'
-  fields:
+- fields:
+    code: '325'
     name: 杭菊
     parent: 21
   model: fallow.Crop
   pk: 141
-- code: '326'
-  fields:
+- fields:
+    code: '326'
     name: 油茶
     parent: 21
   model: fallow.Crop
   pk: 142
-- code: '332'
-  fields:
+- fields:
+    code: '332'
     name: 甜菊
     parent: 21
   model: fallow.Crop
   pk: 143
-- code: '334'
-  fields:
+- fields:
+    code: '334'
     name: 山葵
     parent: 21
   model: fallow.Crop
   pk: 144
-- code: '335'
-  fields:
+- fields:
+    code: '335'
     name: 黃梔
     parent: 21
   model: fallow.Crop
   pk: 145
-- code: '349'
-  fields:
+- fields:
+    code: '349'
     name: 通天草(九尾草)
     parent: 21
   model: fallow.Crop
   pk: 146
-- code: '350'
-  fields:
+- fields:
+    code: '350'
     name: 油茶
     parent: 21
   model: fallow.Crop
   pk: 147
-- code: '351'
-  fields:
+- fields:
+    code: '351'
     name: 平地山葵
     parent: 21
   model: fallow.Crop
   pk: 148
-- code: '352'
-  fields:
+- fields:
+    code: '352'
     name: 油茶(106年以前申辦)
     parent: 21
   model: fallow.Crop
   pk: 149
-- code: '400'
-  fields:
+- fields:
+    code: '400'
     name: 採種用蔬菜
     parent: 21
   model: fallow.Crop
   pk: 150
-- code: '401'
-  fields:
+- fields:
+    code: '401'
     name: 蘆筍
     parent: 21
   model: fallow.Crop
   pk: 151
-- code: '402'
-  fields:
+- fields:
+    code: '402'
     name: 韭菜
     parent: 21
   model: fallow.Crop
   pk: 152
-- code: '403'
-  fields:
+- fields:
+    code: '403'
     name: 竹筍
     parent: 21
   model: fallow.Crop
   pk: 153
-- code: '404'
-  fields:
+- fields:
+    code: '404'
     name: 金針菜
     parent: 21
   model: fallow.Crop
   pk: 154
-- code: '405'
-  fields:
+- fields:
+    code: '405'
     name: 西瓜
     parent: 21
   model: fallow.Crop
   pk: 155
-- code: '406'
-  fields:
+- fields:
+    code: '406'
     name: 洋香瓜
     parent: 21
   model: fallow.Crop
   pk: 156
-- code: '407'
-  fields:
+- fields:
+    code: '407'
     name: 香瓜
     parent: 21
   model: fallow.Crop
   pk: 157
-- code: '408'
-  fields:
+- fields:
+    code: '408'
     name: 瓜子瓜
     parent: 21
   model: fallow.Crop
   pk: 158
-- code: '409'
-  fields:
+- fields:
+    code: '409'
     name: 草莓
     parent: 21
   model: fallow.Crop
   pk: 159
-- code: '410'
-  fields:
+- fields:
+    code: '410'
     name: 洋蔥
     parent: 21
   model: fallow.Crop
   pk: 160
-- code: '411'
-  fields:
+- fields:
+    code: '411'
     name: 蘿蔔
     parent: 21
   model: fallow.Crop
   pk: 161
-- code: '412'
-  fields:
+- fields:
+    code: '412'
     name: 胡蘿蔔
     parent: 21
   model: fallow.Crop
   pk: 162
-- code: '413'
-  fields:
+- fields:
+    code: '413'
     name: 茭白筍
     parent: 21
   model: fallow.Crop
   pk: 163
-- code: '414'
-  fields:
+- fields:
+    code: '414'
     name: 甘藍
     parent: 21
   model: fallow.Crop
   pk: 164
-- code: '415'
-  fields:
+- fields:
+    code: '415'
     name: 抱子甘藍
     parent: 21
   model: fallow.Crop
   pk: 165
-- code: '416'
-  fields:
+- fields:
+    code: '416'
     name: 結球白菜
     parent: 21
   model: fallow.Crop
   pk: 166
-- code: '417'
-  fields:
+- fields:
+    code: '417'
     name: 不結球白菜
     parent: 21
   model: fallow.Crop
   pk: 167
-- code: '418'
-  fields:
+- fields:
+    code: '418'
     name: 食用番茄
     parent: 21
   model: fallow.Crop
   pk: 168
-- code: '419'
-  fields:
+- fields:
+    code: '419'
     name: 加工番茄
     parent: 21
   model: fallow.Crop
   pk: 169
-- code: '420'
-  fields:
+- fields:
+    code: '420'
     name: 豆薯
     parent: 21
   model: fallow.Crop
   pk: 170
-- code: '421'
-  fields:
+- fields:
+    code: '421'
     name: 牛蒡
     parent: 21
   model: fallow.Crop
   pk: 171
-- code: '422'
-  fields:
+- fields:
+    code: '422'
     name: 波羅門蔘
     parent: 21
   model: fallow.Crop
   pk: 172
-- code: '426'
-  fields:
+- fields:
+    code: '426'
     name: 小白菜
     parent: 21
   model: fallow.Crop
   pk: 173
-- code: '430'
-  fields:
+- fields:
+    code: '430'
     name: 其他根菜類
     parent: 21
   model: fallow.Crop
   pk: 174
-- code: '431'
-  fields:
+- fields:
+    code: '431'
     name: 青蒜
     parent: 21
   model: fallow.Crop
   pk: 175
-- code: '432'
-  fields:
+- fields:
+    code: '432'
     name: 蒜頭
     parent: 21
   model: fallow.Crop
   pk: 176
-- code: '433'
-  fields:
+- fields:
+    code: '433'
     name: 蔥
     parent: 21
   model: fallow.Crop
   pk: 177
-- code: '434'
-  fields:
+- fields:
+    code: '434'
     name: 蔥頭
     parent: 21
   model: fallow.Crop
   pk: 178
-- code: '435'
-  fields:
+- fields:
+    code: '435'
     name: 芋
     parent: 21
   model: fallow.Crop
   pk: 179
-- code: '436'
-  fields:
+- fields:
+    code: '436'
     name: 薑
     parent: 21
   model: fallow.Crop
   pk: 180
-- code: '437'
-  fields:
+- fields:
+    code: '437'
     name: 荸薺
     parent: 21
   model: fallow.Crop
   pk: 181
-- code: '438'
-  fields:
+- fields:
+    code: '438'
     name: 蓮藕(子)
     parent: 21
   model: fallow.Crop
   pk: 182
-- code: '439'
-  fields:
+- fields:
+    code: '439'
     name: 球莖甘藍(結頭菜)
     parent: 21
   model: fallow.Crop
   pk: 183
-- code: '440'
-  fields:
+- fields:
+    code: '440'
     name: 蕗蕎
     parent: 21
   model: fallow.Crop
   pk: 184
-- code: '441'
-  fields:
+- fields:
+    code: '441'
     name: 四川榨菜
     parent: 21
   model: fallow.Crop
   pk: 185
-- code: '442'
-  fields:
+- fields:
+    code: '442'
     name: 大心芥菜
     parent: 21
   model: fallow.Crop
   pk: 186
-- code: '443'
-  fields:
+- fields:
+    code: '443'
     name: 慈菇
     parent: 21
   model: fallow.Crop
   pk: 187
-- code: '444'
-  fields:
+- fields:
+    code: '444'
     name: 晚香玉筍
     parent: 21
   model: fallow.Crop
   pk: 188
-- code: '455'
-  fields:
+- fields:
+    code: '455'
     name: 其他莖菜類
     parent: 21
   model: fallow.Crop
   pk: 189
-- code: '456'
-  fields:
+- fields:
+    code: '456'
     name: 大芥菜
     parent: 21
   model: fallow.Crop
   pk: 190
-- code: '457'
-  fields:
+- fields:
+    code: '457'
     name: 蕹菜(空心菜)
     parent: 21
   model: fallow.Crop
   pk: 191
-- code: '458'
-  fields:
+- fields:
+    code: '458'
     name: 芹菜
     parent: 21
   model: fallow.Crop
   pk: 192
-- code: '459'
-  fields:
+- fields:
+    code: '459'
     name: 菠菜
     parent: 21
   model: fallow.Crop
   pk: 193
-- code: '460'
-  fields:
+- fields:
+    code: '460'
     name: 萵苣
     parent: 21
   model: fallow.Crop
   pk: 194
-- code: '461'
-  fields:
+- fields:
+    code: '461'
     name: 莧菜
     parent: 21
   model: fallow.Crop
   pk: 195
-- code: '462'
-  fields:
+- fields:
+    code: '462'
     name: 茼蒿
     parent: 21
   model: fallow.Crop
   pk: 196
-- code: '463'
-  fields:
+- fields:
+    code: '463'
     name: 香芹菜(角菜)
     parent: 21
   model: fallow.Crop
   pk: 197
-- code: '464'
-  fields:
+- fields:
+    code: '464'
     name: 芫荽
     parent: 21
   model: fallow.Crop
   pk: 198
-- code: '465'
-  fields:
+- fields:
+    code: '465'
     name: 芥藍
     parent: 21
   model: fallow.Crop
   pk: 199
-- code: '466'
-  fields:
+- fields:
+    code: '466'
     name: 茴香
     parent: 21
   model: fallow.Crop
   pk: 200
-- code: '467'
-  fields:
+- fields:
+    code: '467'
     name: 吉康菜
     parent: 21
   model: fallow.Crop
   pk: 201
-- code: '468'
-  fields:
+- fields:
+    code: '468'
     name: 山蕨
     parent: 21
   model: fallow.Crop
   pk: 202
-- code: '469'
-  fields:
+- fields:
+    code: '469'
     name: 龍鬚菜
     parent: 21
   model: fallow.Crop
   pk: 203
-- code: '470'
-  fields:
+- fields:
+    code: '470'
     name: 其他葉菜類
     parent: 21
   model: fallow.Crop
   pk: 204
-- code: '471'
-  fields:
+- fields:
+    code: '471'
     name: 花椰菜
     parent: 21
   model: fallow.Crop
   pk: 205
-- code: '473'
-  fields:
+- fields:
+    code: '473'
     name: 胡瓜
     parent: 21
   model: fallow.Crop
   pk: 206
-- code: '474'
-  fields:
+- fields:
+    code: '474'
     name: 越瓜
     parent: 21
   model: fallow.Crop
   pk: 207
-- code: '475'
-  fields:
+- fields:
+    code: '475'
     name: 冬瓜
     parent: 21
   model: fallow.Crop
   pk: 208
-- code: '476'
-  fields:
+- fields:
+    code: '476'
     name: 苦瓜
     parent: 21
   model: fallow.Crop
   pk: 209
-- code: '477'
-  fields:
+- fields:
+    code: '477'
     name: 茄子
     parent: 21
   model: fallow.Crop
   pk: 210
-- code: '478'
-  fields:
+- fields:
+    code: '478'
     name: 長(豇)豆
     parent: 21
   model: fallow.Crop
   pk: 211
-- code: '480'
-  fields:
+- fields:
+    code: '480'
     name: 豌豆(荷蘭豆)
     parent: 21
   model: fallow.Crop
   pk: 212
-- code: '481'
-  fields:
+- fields:
+    code: '481'
     name: 甜椒
     parent: 21
   model: fallow.Crop
   pk: 213
-- code: '482'
-  fields:
+- fields:
+    code: '482'
     name: 辣椒
     parent: 21
   model: fallow.Crop
   pk: 214
-- code: '483'
-  fields:
+- fields:
+    code: '483'
     name: 南瓜
     parent: 21
   model: fallow.Crop
   pk: 215
-- code: '484'
-  fields:
+- fields:
+    code: '484'
     name: 佛手瓜
     parent: 21
   model: fallow.Crop
   pk: 216
-- code: '485'
-  fields:
+- fields:
+    code: '485'
     name: 節瓜
     parent: 21
   model: fallow.Crop
   pk: 217
-- code: '486'
-  fields:
+- fields:
+    code: '486'
     name: 皇帝豆
     parent: 21
   model: fallow.Crop
   pk: 218
-- code: '487'
-  fields:
+- fields:
+    code: '487'
     name: 扁蒲
     parent: 21
   model: fallow.Crop
   pk: 219
-- code: '488'
-  fields:
+- fields:
+    code: '488'
     name: 絲瓜
     parent: 21
   model: fallow.Crop
   pk: 220
-- code: '489'
-  fields:
+- fields:
+    code: '489'
     name: 黃秋葵
     parent: 21
   model: fallow.Crop
   pk: 221
-- code: '490'
-  fields:
+- fields:
+    code: '490'
     name: 鵲豆
     parent: 21
   model: fallow.Crop
   pk: 222
-- code: '491'
-  fields:
+- fields:
+    code: '491'
     name: 關刀豆
     parent: 21
   model: fallow.Crop
   pk: 223
-- code: '492'
-  fields:
+- fields:
+    code: '492'
     name: 菱角
     parent: 21
   model: fallow.Crop
   pk: 224
-- code: '493'
-  fields:
+- fields:
+    code: '493'
     name: 四季豆
     parent: 21
   model: fallow.Crop
   pk: 225
-- code: '494'
-  fields:
+- fields:
+    code: '494'
     name: 大福豆
     parent: 21
   model: fallow.Crop
   pk: 226
-- code: '495'
-  fields:
+- fields:
+    code: '495'
     name: 其它甜瓜
     parent: 21
   model: fallow.Crop
   pk: 227
-- code: '496'
-  fields:
+- fields:
+    code: '496'
     name: 結球萵苣
     parent: 21
   model: fallow.Crop
   pk: 228
-- code: '499'
-  fields:
+- fields:
+    code: '499'
     name: 其他果菜類
     parent: 21
   model: fallow.Crop
   pk: 229
-- code: 4A1
-  fields:
+- fields:
+    code: 4A1
     name: 山蘇
     parent: 21
   model: fallow.Crop
   pk: 230
-- code: 4A2
-  fields:
+- fields:
+    code: 4A2
     name: 皇宮菜
     parent: 21
   model: fallow.Crop
   pk: 231
-- code: 4A3
-  fields:
+- fields:
+    code: 4A3
     name: 紅鳳菜
     parent: 21
   model: fallow.Crop
   pk: 232
-- code: 4A4
-  fields:
+- fields:
+    code: 4A4
     name: 虎豆
     parent: 21
   model: fallow.Crop
   pk: 233
-- code: 4A5
-  fields:
+- fields:
+    code: 4A5
     name: 西洋芹
     parent: 21
   model: fallow.Crop
   pk: 234
-- code: 4A6
-  fields:
+- fields:
+    code: 4A6
     name: 甜菜根
     parent: 21
   model: fallow.Crop
   pk: 235
-- code: 4A7
-  fields:
+- fields:
+    code: 4A7
     name: 青花筍
     parent: 21
   model: fallow.Crop
   pk: 236
-- code: 4A8
-  fields:
+- fields:
+    code: 4A8
     name: 馬齒莧
     parent: 21
   model: fallow.Crop
   pk: 237
-- code: 4A9
-  fields:
+- fields:
+    code: 4A9
     name: 龍葵
     parent: 21
   model: fallow.Crop
   pk: 238
-- code: 4AA
-  fields:
+- fields:
+    code: 4AA
     name: 山苦瓜
     parent: 21
   model: fallow.Crop
   pk: 239
-- code: 4AB
-  fields:
+- fields:
+    code: 4AB
     name: 昭和草
     parent: 21
   model: fallow.Crop
   pk: 240
-- code: 4AC
-  fields:
+- fields:
+    code: 4AC
     name: 番杏
     parent: 21
   model: fallow.Crop
   pk: 241
-- code: 4AD
-  fields:
+- fields:
+    code: 4AD
     name: 格蘭芽
     parent: 21
   model: fallow.Crop
   pk: 242
-- code: 4AE
-  fields:
+- fields:
+    code: 4AE
     name: 地毯草
     parent: 21
   model: fallow.Crop
   pk: 243
-- code: 4AF
-  fields:
+- fields:
+    code: 4AF
     name: 過溝菜蕨(山蕨)
     parent: 21
   model: fallow.Crop
   pk: 244
-- code: 4AG
-  fields:
+- fields:
+    code: 4AG
     name: 地瓜葉
     parent: 21
   model: fallow.Crop
   pk: 245
-- code: 4AH
-  fields:
+- fields:
+    code: 4AH
     name: A菜
     parent: 21
   model: fallow.Crop
   pk: 246
-- code: 4AI
-  fields:
+- fields:
+    code: 4AI
     name: 韭菜花
     parent: 21
   model: fallow.Crop
   pk: 247
-- code: 4AJ
-  fields:
+- fields:
+    code: 4AJ
     name: 野蓮(水蓮菜)
     parent: 21
   model: fallow.Crop
   pk: 248
-- code: 4AK
-  fields:
+- fields:
+    code: 4AK
     name: 石蓮
     parent: 21
   model: fallow.Crop
   pk: 249
-- code: 4AL
-  fields:
+- fields:
+    code: 4AL
     name: 臺灣紅蔾
     parent: 21
   model: fallow.Crop
   pk: 250
-- code: 4AM
-  fields:
+- fields:
+    code: 4AM
     name: 青江菜
     parent: 21
   model: fallow.Crop
   pk: 251
-- code: 4AN
-  fields:
+- fields:
+    code: 4AN
     name: 落葵
     parent: 21
   model: fallow.Crop
   pk: 252
-- code: 4AO
-  fields:
+- fields:
+    code: 4AO
     name: 食用金針心
     parent: 21
   model: fallow.Crop
   pk: 253
-- code: 4AP
-  fields:
+- fields:
+    code: 4AP
     name: 菊苣
     parent: 21
   model: fallow.Crop
   pk: 254
-- code: 4AQ
-  fields:
+- fields:
+    code: 4AQ
     name: 白鳳菜
     parent: 21
   model: fallow.Crop
   pk: 255
-- code: 4AR
-  fields:
+- fields:
+    code: 4AR
     name: 芝麻菜
     parent: 21
   model: fallow.Crop
   pk: 256
-- code: 4AS
-  fields:
+- fields:
+    code: 4AS
     name: 豌豆苗
     parent: 21
   model: fallow.Crop
   pk: 257
-- code: 4AT
-  fields:
+- fields:
+    code: 4AT
     name: 嫩莖萵苣
     parent: 21
   model: fallow.Crop
   pk: 258
-- code: 4AV
-  fields:
+- fields:
+    code: 4AV
     name: 毛豆
     parent: 21
   model: fallow.Crop
   pk: 259
-- code: 4AW
-  fields:
+- fields:
+    code: 4AW
     name: 香椿
     parent: 21
   model: fallow.Crop
   pk: 260
-- code: 4AX
-  fields:
+- fields:
+    code: 4AX
     name: 水合歡
     parent: 21
   model: fallow.Crop
   pk: 261
-- code: 4AY
-  fields:
+- fields:
+    code: 4AY
     name: 薑黃
     parent: 21
   model: fallow.Crop
   pk: 262
-- code: 4AZ
-  fields:
+- fields:
+    code: 4AZ
     name: 紅藜(台灣藜)
     parent: 21
   model: fallow.Crop
   pk: 263
-- code: 4B1
-  fields:
+- fields:
+    code: 4B1
     name: 甜菜
     parent: 21
   model: fallow.Crop
   pk: 264
-- code: 4B2
-  fields:
+- fields:
+    code: 4B2
     name: 契作採種用蔬菜
     parent: 21
   model: fallow.Crop
   pk: 265
-- code: 4B3
-  fields:
+- fields:
+    code: 4B3
     name: 珠蔥
     parent: 21
   model: fallow.Crop
   pk: 266
-- code: 4B4
-  fields:
+- fields:
+    code: 4B4
     name: 菾菜
     parent: 21
   model: fallow.Crop
   pk: 267
-- code: 4B5
-  fields:
+- fields:
+    code: 4B5
     name: 洋蔥苗
     parent: 21
   model: fallow.Crop
   pk: 268
-- code: 4B6
-  fields:
+- fields:
+    code: 4B6
     name: 貴妃菜
     parent: 21
   model: fallow.Crop
   pk: 269
-- code: 4B7
-  fields:
+- fields:
+    code: 4B7
     name: 青椒
     parent: 21
   model: fallow.Crop
   pk: 270
-- code: 4B8
-  fields:
+- fields:
+    code: 4B8
     name: 甘藷葉
     parent: 21
   model: fallow.Crop
   pk: 271
-- code: 4B9
-  fields:
+- fields:
+    code: 4B9
     name: 麻意
     parent: 21
   model: fallow.Crop
   pk: 272
-- code: 4BC
-  fields:
+- fields:
+    code: 4BC
     name: 山翡翠
     parent: 21
   model: fallow.Crop
   pk: 273
-- code: 4BD
-  fields:
+- fields:
+    code: 4BD
     name: 葉用豌豆
     parent: 21
   model: fallow.Crop
   pk: 274
-- code: 4BE
-  fields:
+- fields:
+    code: 4BE
     name: 短期葉菜類
     parent: 21
   model: fallow.Crop
   pk: 275
-- code: 4BF
-  fields:
+- fields:
+    code: 4BF
     name: 香椿(106年以前申辦)
     parent: 21
   model: fallow.Crop
   pk: 276
-- code: '509'
-  fields:
+- fields:
+    code: '509'
     name: 油菜
     parent: 21
   model: fallow.Crop
   pk: 277
-- code: '524'
-  fields:
+- fields:
+    code: '524'
     name: 景觀向日葵(地特)
     parent: 21
   model: fallow.Crop
   pk: 278
-- code: '532'
-  fields:
+- fields:
+    code: '532'
     name: 景觀(地區特產)
     parent: 21
   model: fallow.Crop
   pk: 279
-- code: '542'
-  fields:
+- fields:
+    code: '542'
     name: 食用向日葵
     parent: 21
   model: fallow.Crop
   pk: 280
-- code: '601'
-  fields:
+- fields:
+    code: '601'
     name: 香蕉
     parent: 21
   model: fallow.Crop
   pk: 281
-- code: '602'
-  fields:
+- fields:
+    code: '602'
     name: 契作鳳梨
     parent: 21
   model: fallow.Crop
   pk: 282
-- code: '603'
-  fields:
+- fields:
+    code: '603'
     name: 椪柑
     parent: 21
   model: fallow.Crop
   pk: 283
-- code: '604'
-  fields:
+- fields:
+    code: '604'
     name: 柳橙
     parent: 21
   model: fallow.Crop
   pk: 284
-- code: '605'
-  fields:
+- fields:
+    code: '605'
     name: 桶柑
     parent: 21
   model: fallow.Crop
   pk: 285
-- code: '606'
-  fields:
+- fields:
+    code: '606'
     name: 溫洲蜜柑
     parent: 21
   model: fallow.Crop
   pk: 286
-- code: '607'
-  fields:
+- fields:
+    code: '607'
     name: 文旦柚
     parent: 21
   model: fallow.Crop
   pk: 287
-- code: '608'
-  fields:
+- fields:
+    code: '608'
     name: 斗柚
     parent: 21
   model: fallow.Crop
   pk: 288
-- code: '609'
-  fields:
+- fields:
+    code: '609'
     name: 白柚
     parent: 21
   model: fallow.Crop
   pk: 289
-- code: '610'
-  fields:
+- fields:
+    code: '610'
     name: 晚崙西亞橙
     parent: 21
   model: fallow.Crop
   pk: 290
-- code: '611'
-  fields:
+- fields:
+    code: '611'
     name: 檸檬
     parent: 21
   model: fallow.Crop
   pk: 291
-- code: '612'
-  fields:
+- fields:
+    code: '612'
     name: 葡萄柚
     parent: 21
   model: fallow.Crop
   pk: 292
-- code: '613'
-  fields:
+- fields:
+    code: '613'
     name: 金柑〈甜金棗〉
     parent: 21
   model: fallow.Crop
   pk: 293
-- code: '614'
-  fields:
+- fields:
+    code: '614'
     name: 海梨柑
     parent: 21
   model: fallow.Crop
   pk: 294
-- code: '615'
-  fields:
+- fields:
+    code: '615'
     name: 茂谷柑
     parent: 21
   model: fallow.Crop
   pk: 295
-- code: '616'
-  fields:
+- fields:
+    code: '616'
     name: 四季桔
     parent: 21
   model: fallow.Crop
   pk: 296
-- code: '617'
-  fields:
+- fields:
+    code: '617'
     name: 萊姆
     parent: 21
   model: fallow.Crop
   pk: 297
-- code: '619'
-  fields:
+- fields:
+    code: '619'
     name: 龍眼
     parent: 21
   model: fallow.Crop
   pk: 298
-- code: '623'
-  fields:
+- fields:
+    code: '623'
     name: 番石榴
     parent: 21
   model: fallow.Crop
   pk: 299
-- code: '624'
-  fields:
+- fields:
+    code: '624'
     name: 李
     parent: 21
   model: fallow.Crop
   pk: 300
-- code: '625'
-  fields:
+- fields:
+    code: '625'
     name: 桃
     parent: 21
   model: fallow.Crop
   pk: 301
-- code: '626'
-  fields:
+- fields:
+    code: '626'
     name: 柿
     parent: 21
   model: fallow.Crop
   pk: 302
-- code: '627'
-  fields:
+- fields:
+    code: '627'
     name: 木瓜
     parent: 21
   model: fallow.Crop
   pk: 303
-- code: '628'
-  fields:
+- fields:
+    code: '628'
     name: 蓮霧
     parent: 21
   model: fallow.Crop
   pk: 304
-- code: '629'
-  fields:
+- fields:
+    code: '629'
     name: 巨峰葡萄
     parent: 21
   model: fallow.Crop
   pk: 305
-- code: '630'
-  fields:
+- fields:
+    code: '630'
     name: 義大利葡萄
     parent: 21
   model: fallow.Crop
   pk: 306
-- code: '631'
-  fields:
+- fields:
+    code: '631'
     name: 金香葡萄
     parent: 21
   model: fallow.Crop
   pk: 307
-- code: '632'
-  fields:
+- fields:
+    code: '632'
     name: 黑后葡萄
     parent: 21
   model: fallow.Crop
   pk: 308
-- code: '633'
-  fields:
+- fields:
+    code: '633'
     name: 其他葡萄
     parent: 21
   model: fallow.Crop
   pk: 309
-- code: '634'
-  fields:
+- fields:
+    code: '634'
     name: 枇杷
     parent: 21
   model: fallow.Crop
   pk: 310
-- code: '635'
-  fields:
+- fields:
+    code: '635'
     name: 梅
     parent: 21
   model: fallow.Crop
   pk: 311
-- code: '636'
-  fields:
+- fields:
+    code: '636'
     name: 荔枝
     parent: 21
   model: fallow.Crop
   pk: 312
-- code: '637'
-  fields:
+- fields:
+    code: '637'
     name: 橄欖
     parent: 21
   model: fallow.Crop
   pk: 313
-- code: '638'
-  fields:
+- fields:
+    code: '638'
     name: 楊桃
     parent: 21
   model: fallow.Crop
   pk: 314
-- code: '639'
-  fields:
+- fields:
+    code: '639'
     name: 梨
     parent: 21
   model: fallow.Crop
   pk: 315
-- code: '640'
-  fields:
+- fields:
+    code: '640'
     name: 蘋果
     parent: 21
   model: fallow.Crop
   pk: 316
-- code: '641'
-  fields:
+- fields:
+    code: '641'
     name: 棗
     parent: 21
   model: fallow.Crop
   pk: 317
-- code: '642'
-  fields:
+- fields:
+    code: '642'
     name: 番荔枝〈釋迦〉
     parent: 21
   model: fallow.Crop
   pk: 318
-- code: '643'
-  fields:
+- fields:
+    code: '643'
     name: 百香果
     parent: 21
   model: fallow.Crop
   pk: 319
-- code: '644'
-  fields:
+- fields:
+    code: '644'
     name: 彌猴桃〈奇異果〉
     parent: 21
   model: fallow.Crop
   pk: 320
-- code: '645'
-  fields:
+- fields:
+    code: '645'
     name: 人心果
     parent: 21
   model: fallow.Crop
   pk: 321
-- code: '697'
-  fields:
+- fields:
+    code: '697'
     name: 桑椹(果)
     parent: 21
   model: fallow.Crop
   pk: 322
-- code: '699'
-  fields:
+- fields:
+    code: '699'
     name: 桑
     parent: 21
   model: fallow.Crop
   pk: 323
-- code: 69A
-  fields:
+- fields:
+    code: 69A
     name: 桑椹(果)(106年以前申辦)
     parent: 21
   model: fallow.Crop
   pk: 324
-- code: 69B
-  fields:
+- fields:
+    code: 69B
     name: 桑(106年以前申辦)
     parent: 21
   model: fallow.Crop
   pk: 325
-- code: '700'
-  fields:
+- fields:
+    code: '700'
     name: 牧草類
     parent: 21
   model: fallow.Crop
   pk: 326
-- code: '701'
-  fields:
+- fields:
+    code: '701'
     name: 燕麥
     parent: 21
   model: fallow.Crop
   pk: 327
-- code: '703'
-  fields:
+- fields:
+    code: '703'
     name: 盤固拉草
     parent: 21
   model: fallow.Crop
   pk: 328
-- code: '704'
-  fields:
+- fields:
+    code: '704'
     name: 狼尾草
     parent: 21
   model: fallow.Crop
   pk: 329
-- code: '717'
-  fields:
+- fields:
+    code: '717'
     name: 洋蔥(契作)
     parent: 21
   model: fallow.Crop
   pk: 330
-- code: '800'
-  fields:
+- fields:
+    code: '800'
     name: 藥用作物
     parent: 21
   model: fallow.Crop
   pk: 331
-- code: '801'
-  fields:
+- fields:
+    code: '801'
     name: 柴胡
     parent: 21
   model: fallow.Crop
   pk: 332
-- code: '802'
-  fields:
+- fields:
+    code: '802'
     name: 山藥
     parent: 21
   model: fallow.Crop
   pk: 333
-- code: '803'
-  fields:
+- fields:
+    code: '803'
     name: 當歸
     parent: 21
   model: fallow.Crop
   pk: 334
-- code: '804'
-  fields:
+- fields:
+    code: '804'
     name: 薄荷
     parent: 21
   model: fallow.Crop
   pk: 335
-- code: '805'
-  fields:
+- fields:
+    code: '805'
     name: 澤瀉
     parent: 21
   model: fallow.Crop
   pk: 336
-- code: '806'
-  fields:
+- fields:
+    code: '806'
     name: 黃芩
     parent: 21
   model: fallow.Crop
   pk: 337
-- code: '807'
-  fields:
+- fields:
+    code: '807'
     name: 桔梗
     parent: 21
   model: fallow.Crop
   pk: 338
-- code: '808'
-  fields:
+- fields:
+    code: '808'
     name: 除蟲菊
     parent: 21
   model: fallow.Crop
   pk: 339
-- code: '809'
-  fields:
+- fields:
+    code: '809'
     name: 麥門冬
     parent: 21
   model: fallow.Crop
   pk: 340
-- code: '810'
-  fields:
+- fields:
+    code: '810'
     name: 地黃
     parent: 21
   model: fallow.Crop
   pk: 341
-- code: '811'
-  fields:
+- fields:
+    code: '811'
     name: 其他藥用
     parent: 21
   model: fallow.Crop
   pk: 342
-- code: '812'
-  fields:
+- fields:
+    code: '812'
     name: 枸杞
     parent: 21
   model: fallow.Crop
   pk: 343
-- code: '813'
-  fields:
+- fields:
+    code: '813'
     name: 澤蘭
     parent: 21
   model: fallow.Crop
   pk: 344
-- code: '814'
-  fields:
+- fields:
+    code: '814'
     name: 筋骨草
     parent: 21
   model: fallow.Crop
   pk: 345
-- code: '815'
-  fields:
+- fields:
+    code: '815'
     name: 川七
     parent: 21
   model: fallow.Crop
   pk: 346
-- code: '816'
-  fields:
+- fields:
+    code: '816'
     name: 黨蔘
     parent: 21
   model: fallow.Crop
   pk: 347
-- code: '817'
-  fields:
+- fields:
+    code: '817'
     name: 蘆薈
     parent: 21
   model: fallow.Crop
   pk: 348
-- code: '818'
-  fields:
+- fields:
+    code: '818'
     name: 葛鬱金
     parent: 21
   model: fallow.Crop
   pk: 349
-- code: '819'
-  fields:
+- fields:
+    code: '819'
     name: 紅棗
     parent: 21
   model: fallow.Crop
   pk: 350
-- code: '820'
-  fields:
+- fields:
+    code: '820'
     name: 丹蔘
     parent: 21
   model: fallow.Crop
   pk: 351
-- code: '821'
-  fields:
+- fields:
+    code: '821'
     name: 白鶴靈芝
     parent: 21
   model: fallow.Crop
   pk: 352
-- code: '822'
-  fields:
+- fields:
+    code: '822'
     name: 半支蓮
     parent: 21
   model: fallow.Crop
   pk: 353
-- code: '823'
-  fields:
+- fields:
+    code: '823'
     name: 小金英
     parent: 21
   model: fallow.Crop
   pk: 354
-- code: '824'
-  fields:
+- fields:
+    code: '824'
     name: 益母草
     parent: 21
   model: fallow.Crop
   pk: 355
-- code: '825'
-  fields:
+- fields:
+    code: '825'
     name: 山芙蓉
     parent: 21
   model: fallow.Crop
   pk: 356
-- code: '826'
-  fields:
+- fields:
+    code: '826'
     name: 魚腥草
     parent: 21
   model: fallow.Crop
   pk: 357
-- code: '827'
-  fields:
+- fields:
+    code: '827'
     name: 六神花
     parent: 21
   model: fallow.Crop
   pk: 358
-- code: '828'
-  fields:
+- fields:
+    code: '828'
     name: 七葉膽
     parent: 21
   model: fallow.Crop
   pk: 359
-- code: '829'
-  fields:
+- fields:
+    code: '829'
     name: 百花蛇舌草
     parent: 21
   model: fallow.Crop
   pk: 360
-- code: '830'
-  fields:
+- fields:
+    code: '830'
     name: 薑黃
     parent: 21
   model: fallow.Crop
   pk: 361
-- code: '831'
-  fields:
+- fields:
+    code: '831'
     name: 檄樹(諾麗果)
     parent: 21
   model: fallow.Crop
   pk: 362
-- code: '832'
-  fields:
+- fields:
+    code: '832'
     name: 土人蔘
     parent: 21
   model: fallow.Crop
   pk: 363
-- code: '833'
-  fields:
+- fields:
+    code: '833'
     name: 紅棗(106年以前申辦)
     parent: 21
   model: fallow.Crop
   pk: 364
-- code: '834'
-  fields:
+- fields:
+    code: '834'
     name: 白鶴靈芝(106年以前申辦)
     parent: 21
   model: fallow.Crop
   pk: 365
-- code: '835'
-  fields:
+- fields:
+    code: '835'
     name: 諾麗果(106年以前申辦)
     parent: 21
   model: fallow.Crop
   pk: 366
-- code: '901'
-  fields:
+- fields:
+    code: '901'
     name: 菊花
     parent: 21
   model: fallow.Crop
   pk: 367
-- code: '902'
-  fields:
+- fields:
+    code: '902'
     name: 唐菖蒲
     parent: 21
   model: fallow.Crop
   pk: 368
-- code: '903'
-  fields:
+- fields:
+    code: '903'
     name: 夜來香
     parent: 21
   model: fallow.Crop
   pk: 369
-- code: '951'
-  fields:
+- fields:
+    code: '951'
     name: 洋菇
     parent: 21
   model: fallow.Crop
   pk: 370
-- code: '952'
-  fields:
+- fields:
+    code: '952'
     name: 段木香菇
     parent: 21
   model: fallow.Crop
   pk: 371
-- code: '954'
-  fields:
+- fields:
+    code: '954'
     name: 草菇
     parent: 21
   model: fallow.Crop
   pk: 372
-- code: '955'
-  fields:
+- fields:
+    code: '955'
     name: 木耳
     parent: 21
   model: fallow.Crop
   pk: 373
-- code: '956'
-  fields:
+- fields:
+    code: '956'
     name: 白木耳
     parent: 21
   model: fallow.Crop
   pk: 374
-- code: '957'
-  fields:
+- fields:
+    code: '957'
     name: 金針菇
     parent: 21
   model: fallow.Crop
   pk: 375
-- code: 9AG
-  fields:
+- fields:
+    code: 9AG
     name: 金銀花
     parent: 21
   model: fallow.Crop
   pk: 376
-- code: 9AH
-  fields:
+- fields:
+    code: 9AH
     name: 香草
     parent: 21
   model: fallow.Crop
   pk: 377
-- code: 9AI
-  fields:
+- fields:
+    code: 9AI
     name: 迷迭香
     parent: 21
   model: fallow.Crop
   pk: 378
-- code: 9AJ
-  fields:
+- fields:
+    code: 9AJ
     name: 玉龍草
     parent: 21
   model: fallow.Crop
   pk: 379
-- code: 9AK
-  fields:
+- fields:
+    code: 9AK
     name: 銀柳
     parent: 21
   model: fallow.Crop
   pk: 380
-- code: 9AL
-  fields:
+- fields:
+    code: 9AL
     name: 魚針草(抹草)
     parent: 21
   model: fallow.Crop
   pk: 381
-- code: 9AM
-  fields:
+- fields:
+    code: 9AM
     name: 黃花蜜菜
     parent: 21
   model: fallow.Crop
   pk: 382
-- code: 9AN
-  fields:
+- fields:
+    code: 9AN
     name: 紫珠
     parent: 21
   model: fallow.Crop
   pk: 383
-- code: 9AO
-  fields:
+- fields:
+    code: 9AO
     name: 蒲公英
     parent: 21
   model: fallow.Crop
   pk: 384
-- code: 9AP
-  fields:
+- fields:
+    code: 9AP
     name: 鴨母草
     parent: 21
   model: fallow.Crop
   pk: 385
-- code: 9AQ
-  fields:
+- fields:
+    code: 9AQ
     name: 蘄艾(海芙蓉)
     parent: 21
   model: fallow.Crop
   pk: 386
-- code: 9AR
-  fields:
+- fields:
+    code: 9AR
     name: 金線蓮
     parent: 21
   model: fallow.Crop
   pk: 387
-- code: 9AS
-  fields:
+- fields:
+    code: 9AS
     name: 雪蓮
     parent: 21
   model: fallow.Crop
   pk: 388
-- code: 9AT
-  fields:
+- fields:
+    code: 9AT
     name: 香茅
     parent: 21
   model: fallow.Crop
   pk: 389
-- code: 9AU
-  fields:
+- fields:
+    code: 9AU
     name: 葉下珠
     parent: 21
   model: fallow.Crop
   pk: 390
-- code: 9AX
-  fields:
+- fields:
+    code: 9AX
     name: 茴香(籽)
     parent: 21
   model: fallow.Crop
   pk: 391
-- code: '533'
-  fields:
+- fields:
+    code: '533'
     name: 特殊地翻耕
     parent: 22
   model: fallow.Crop
   pk: 392
-- code: '021'
-  fields:
+- fields:
+    code: '021'
     name: 契作茶
     parent: 23
   model: fallow.Crop
   pk: 393
-- code: '022'
-  fields:
+- fields:
+    code: '022'
     name: 契作油茶
     parent: 23
   model: fallow.Crop
   pk: 394
-- code: '002'
-  fields:
+- fields:
+    code: '002'
     name: 契作玉米
     parent: 24
   model: fallow.Crop
   pk: 395
-- code: '550'
-  fields:
+- fields:
+    code: '550'
     name: 綠肥(台東特殊期)
     parent: 25
   model: fallow.Crop
   pk: 396
-- code: '551'
-  fields:
+- fields:
+    code: '551'
     name: 翻耕(台東特殊期)
     parent: 26
   model: fallow.Crop
   pk: 397
-- code: '023'
-  fields:
+- fields:
+    code: '023'
     name: 契作茶(第7期)
     parent: 27
   model: fallow.Crop
   pk: 398
-- code: '024'
-  fields:
+- fields:
+    code: '024'
     name: 契作油茶(第7期)
     parent: 27
   model: fallow.Crop
   pk: 399
-- code: '025'
-  fields:
+- fields:
+    code: '025'
     name: 契作茶(第8期)
     parent: 27
   model: fallow.Crop
   pk: 400
-- code: '026'
-  fields:
+- fields:
+    code: '026'
     name: 契作油茶(第8期)
     parent: 27
   model: fallow.Crop
   pk: 401
-- code: '971'
-  fields:
+- fields:
+    code: '971'
     name: 自行復耕(水稻)
     parent: 29
   model: fallow.Crop
   pk: 402
-- code: '972'
-  fields:
+- fields:
+    code: '972'
     name: 自行復耕(雜糧)
     parent: 29
   model: fallow.Crop
   pk: 403
-- code: '973'
-  fields:
+- fields:
+    code: '973'
     name: 自行復耕(果樹)
     parent: 29
   model: fallow.Crop
   pk: 404
-- code: '974'
-  fields:
+- fields:
+    code: '974'
     name: 自行復耕(蔬菜)
     parent: 29
   model: fallow.Crop
   pk: 405
-- code: '975'
-  fields:
+- fields:
+    code: '975'
     name: 自行復耕(其他)
     parent: 29
   model: fallow.Crop
   pk: 406
-- code: '976'
-  fields:
+- fields:
+    code: '976'
     name: 自行復耕(花卉)
     parent: 29
   model: fallow.Crop
   pk: 407
-- code: '111'
-  fields:
+- fields:
+    code: '111'
     name: 契作高梁
     parent: 30
   model: fallow.Crop
   pk: 408
-- code: '112'
-  fields:
+- fields:
+    code: '112'
     name: 契作飼料玉米
     parent: 30
   model: fallow.Crop
   pk: 409
-- code: '242'
-  fields:
+- fields:
+    code: '242'
     name: 馬拉巴栗
     parent: 30
   model: fallow.Crop
   pk: 410
-- code: '252'
-  fields:
+- fields:
+    code: '252'
     name: 破布子
     parent: 30
   model: fallow.Crop
   pk: 411
-- code: '285'
-  fields:
+- fields:
+    code: '285'
     name: 椰子
     parent: 30
   model: fallow.Crop
   pk: 412
-- code: '289'
-  fields:
+- fields:
+    code: '289'
     name: 造林〈樹苗〉
     parent: 30
   model: fallow.Crop
   pk: 413
-- code: '337'
-  fields:
+- fields:
+    code: '337'
     name: 咖啡
     parent: 30
   model: fallow.Crop
   pk: 414
-- code: '338'
-  fields:
+- fields:
+    code: '338'
     name: 通草
     parent: 30
   model: fallow.Crop
   pk: 415
-- code: '339'
-  fields:
+- fields:
+    code: '339'
     name: 愛玉子
     parent: 30
   model: fallow.Crop
   pk: 416
-- code: '397'
-  fields:
+- fields:
+    code: '397'
     name: 菸草
     parent: 30
   model: fallow.Crop
   pk: 417
-- code: '398'
-  fields:
+- fields:
+    code: '398'
     name: 原料甘蔗
     parent: 30
   model: fallow.Crop
   pk: 418
-- code: '472'
-  fields:
+- fields:
+    code: '472'
     name: 青花菜
     parent: 30
   model: fallow.Crop
   pk: 419
-- code: '600'
-  fields:
+- fields:
+    code: '600'
     name: 果樹苗圃
     parent: 30
   model: fallow.Crop
   pk: 420
-- code: '618'
-  fields:
+- fields:
+    code: '618'
     name: 其他雜柑
     parent: 30
   model: fallow.Crop
   pk: 421
-- code: '620'
-  fields:
+- fields:
+    code: '620'
     name: 本地種芒果
     parent: 30
   model: fallow.Crop
   pk: 422
-- code: '621'
-  fields:
+- fields:
+    code: '621'
     name: 改良種芒果
     parent: 30
   model: fallow.Crop
   pk: 423
-- code: '622'
-  fields:
+- fields:
+    code: '622'
     name: 檳榔
     parent: 30
   model: fallow.Crop
   pk: 424
-- code: '646'
-  fields:
+- fields:
+    code: '646'
     name: 可可椰子
     parent: 30
   model: fallow.Crop
   pk: 425
-- code: '647'
-  fields:
+- fields:
+    code: '647'
     name: 可可
     parent: 30
   model: fallow.Crop
   pk: 426
-- code: '648'
-  fields:
+- fields:
+    code: '648'
     name: 酪梨
     parent: 30
   model: fallow.Crop
   pk: 427
-- code: '649'
-  fields:
+- fields:
+    code: '649'
     name: 楊梅
     parent: 30
   model: fallow.Crop
   pk: 428
-- code: '650'
-  fields:
+- fields:
+    code: '650'
     name: 栗
     parent: 30
   model: fallow.Crop
   pk: 429
-- code: '651'
-  fields:
+- fields:
+    code: '651'
     name: 紅龍果
     parent: 30
   model: fallow.Crop
   pk: 430
-- code: '652'
-  fields:
+- fields:
+    code: '652'
     name: 梨(高接)
     parent: 30
   model: fallow.Crop
   pk: 431
-- code: '653'
-  fields:
+- fields:
+    code: '653'
     name: 梨(非高接)
     parent: 30
   model: fallow.Crop
   pk: 432
-- code: '698'
-  fields:
+- fields:
+    code: '698'
     name: 其他青果
     parent: 30
   model: fallow.Crop
   pk: 433
-- code: '702'
-  fields:
+- fields:
+    code: '702'
     name: 其他短期牧草
     parent: 30
   model: fallow.Crop
   pk: 434
-- code: '705'
-  fields:
+- fields:
+    code: '705'
     name: 其他長期牧草
     parent: 30
   model: fallow.Crop
   pk: 435
-- code: '706'
-  fields:
+- fields:
+    code: '706'
     name: 青割玉米
     parent: 30
   model: fallow.Crop
   pk: 436
-- code: '904'
-  fields:
+- fields:
+    code: '904'
     name: 大理花
     parent: 30
   model: fallow.Crop
   pk: 437
-- code: '905'
-  fields:
+- fields:
+    code: '905'
     name: 滿天星
     parent: 30
   model: fallow.Crop
   pk: 438
-- code: '908'
-  fields:
+- fields:
+    code: '908'
     name: 百合
     parent: 30
   model: fallow.Crop
   pk: 439
-- code: '931'
-  fields:
+- fields:
+    code: '931'
     name: 玫瑰
     parent: 30
   model: fallow.Crop
   pk: 440
-- code: '932'
-  fields:
+- fields:
+    code: '932'
     name: 玉蘭花
     parent: 30
   model: fallow.Crop
   pk: 441
-- code: '933'
-  fields:
+- fields:
+    code: '933'
     name: 蘭花
     parent: 30
   model: fallow.Crop
   pk: 442
-- code: '935'
-  fields:
+- fields:
+    code: '935'
     name: 火鶴花
     parent: 30
   model: fallow.Crop
   pk: 443
-- code: '938'
-  fields:
+- fields:
+    code: '938'
     name: 文心蘭
     parent: 30
   model: fallow.Crop
   pk: 444
-- code: '941'
-  fields:
+- fields:
+    code: '941'
     name: 苗圃
     parent: 30
   model: fallow.Crop
   pk: 445
-- code: '942'
-  fields:
+- fields:
+    code: '942'
     name: 盆花
     parent: 30
   model: fallow.Crop
   pk: 446
-- code: '950'
-  fields:
+- fields:
+    code: '950'
     name: 菇類
     parent: 30
   model: fallow.Crop
   pk: 447
-- code: '953'
-  fields:
+- fields:
+    code: '953'
     name: 太空包香菇
     parent: 30
   model: fallow.Crop
   pk: 448
-- code: '958'
-  fields:
+- fields:
+    code: '958'
     name: 蠔菇
     parent: 30
   model: fallow.Crop
   pk: 449
-- code: '959'
-  fields:
+- fields:
+    code: '959'
     name: 其他菇類
     parent: 30
   model: fallow.Crop
   pk: 450
-- code: '980'
-  fields:
+- fields:
+    code: '980'
     name: 耕作困難地造林
     parent: 30
   model: fallow.Crop
   pk: 451
-- code: '990'
-  fields:
+- fields:
+    code: '990'
     name: 契作玉米
     parent: 30
   model: fallow.Crop
   pk: 452
-- code: '000'
-  fields:
+- fields:
+    code: '000'
     name: 穀類
     parent: 31
   model: fallow.Crop
   pk: 453
-- code: 00A
-  fields:
+- fields:
+    code: 00A
     name: 水稻(直接給付)
     parent: 31
   model: fallow.Crop
   pk: 454
-- code: '010'
-  fields:
+- fields:
+    code: '010'
     name: 水稻(再生稻)
     parent: 31
   model: fallow.Crop
   pk: 455
-- code: 01A
-  fields:
+- fields:
+    code: 01A
     name: 水稻(產銷集團)
     parent: 31
   model: fallow.Crop
   pk: 456
-- code: '100'
-  fields:
+- fields:
+    code: '100'
     name: 豆類
     parent: 31
   model: fallow.Crop
   pk: 457
-- code: '200'
-  fields:
+- fields:
+    code: '200'
     name: 薯類
     parent: 31
   model: fallow.Crop
   pk: 458
-- code: '300'
-  fields:
+- fields:
+    code: '300'
     name: 特用作物
     parent: 31
   model: fallow.Crop
   pk: 459
-- code: '307'
-  fields:
+- fields:
+    code: '307'
     name: 瓊麻
     parent: 31
   model: fallow.Crop
   pk: 460
-- code: '323'
-  fields:
+- fields:
+    code: '323'
     name: 茉莉
     parent: 31
   model: fallow.Crop
   pk: 461
-- code: '324'
-  fields:
+- fields:
+    code: '324'
     name: 秀英
     parent: 31
   model: fallow.Crop
   pk: 462
-- code: '327'
-  fields:
+- fields:
+    code: '327'
     name: 亞麻
     parent: 31
   model: fallow.Crop
   pk: 463
-- code: '328'
-  fields:
+- fields:
+    code: '328'
     name: 苧麻
     parent: 31
   model: fallow.Crop
   pk: 464
-- code: '329'
-  fields:
+- fields:
+    code: '329'
     name: 荖藤
     parent: 31
   model: fallow.Crop
   pk: 465
-- code: '330'
-  fields:
+- fields:
+    code: '330'
     name: 荖花
     parent: 31
   model: fallow.Crop
   pk: 466
-- code: '331'
-  fields:
+- fields:
+    code: '331'
     name: 荖葉
     parent: 31
   model: fallow.Crop
   pk: 467
-- code: '333'
-  fields:
+- fields:
+    code: '333'
     name: 羅勒
     parent: 31
   model: fallow.Crop
   pk: 468
-- code: '336'
-  fields:
+- fields:
+    code: '336'
     name: 葛藤
     parent: 31
   model: fallow.Crop
   pk: 469
-- code: '340'
-  fields:
+- fields:
+    code: '340'
     name: 南薑
     parent: 31
   model: fallow.Crop
   pk: 470
-- code: '399'
-  fields:
+- fields:
+    code: '399'
     name: 其他長期特用
     parent: 31
   model: fallow.Crop
   pk: 471
-- code: '498'
-  fields:
+- fields:
+    code: '498'
     name: 輪作地利維護
     parent: 31
   model: fallow.Crop
   pk: 472
-- code: 4BA
-  fields:
+- fields:
+    code: 4BA
     name: 香瓜茄
     parent: 31
   model: fallow.Crop
   pk: 473
-- code: 4BB
-  fields:
+- fields:
+    code: 4BB
     name: 大菁
     parent: 31
   model: fallow.Crop
   pk: 474
-- code: '500'
-  fields:
+- fields:
+    code: '500'
     name: 綠肥
     parent: 31
   model: fallow.Crop
   pk: 475
-- code: '504'
-  fields:
+- fields:
+    code: '504'
     name: 豌豆(綠肥)
     parent: 31
   model: fallow.Crop
   pk: 476
-- code: '505'
-  fields:
+- fields:
+    code: '505'
     name: 魯冰
     parent: 31
   model: fallow.Crop
   pk: 477
-- code: '510'
-  fields:
+- fields:
+    code: '510'
     name: 鐵虎豆
     parent: 31
   model: fallow.Crop
   pk: 478
-- code: '511'
-  fields:
+- fields:
+    code: '511'
     name: 爬地蘭
     parent: 31
   model: fallow.Crop
   pk: 479
-- code: '514'
-  fields:
+- fields:
+    code: '514'
     name: 其他單播
     parent: 31
   model: fallow.Crop
   pk: 480
-- code: '515'
-  fields:
+- fields:
+    code: '515'
     name: 其他混播
     parent: 31
   model: fallow.Crop
   pk: 481
-- code: '516'
-  fields:
+- fields:
+    code: '516'
     name: 休閒面積
     parent: 31
   model: fallow.Crop
   pk: 482
-- code: '517'
-  fields:
+- fields:
+    code: '517'
     name: 荒廢面積
     parent: 31
   model: fallow.Crop
   pk: 483
-- code: '523'
-  fields:
+- fields:
+    code: '523'
     name: 景觀作物
     parent: 31
   model: fallow.Crop
   pk: 484
-- code: '597'
-  fields:
+- fields:
+    code: '597'
     name: 翻耕地利維護
     parent: 31
   model: fallow.Crop
   pk: 485
-- code: '598'
-  fields:
+- fields:
+    code: '598'
     name: 綠肥地利維護
     parent: 31
   model: fallow.Crop
   pk: 486
-- code: '599'
-  fields:
+- fields:
+    code: '599'
     name: 停灌
     parent: 31
   model: fallow.Crop
   pk: 487
-- code: '654'
-  fields:
+- fields:
+    code: '654'
     name: 榴槤蜜
     parent: 31
   model: fallow.Crop
   pk: 488
-- code: '655'
-  fields:
+- fields:
+    code: '655'
     name: 黃金果
     parent: 31
   model: fallow.Crop
   pk: 489
-- code: '656'
-  fields:
+- fields:
+    code: '656'
     name: 嘉寶果(樹葡萄)
     parent: 31
   model: fallow.Crop
   pk: 490
-- code: '657'
-  fields:
+- fields:
+    code: '657'
     name: 無花果
     parent: 31
   model: fallow.Crop
   pk: 491
-- code: '658'
-  fields:
+- fields:
+    code: '658'
     name: 火龍果(漿果)
     parent: 31
   model: fallow.Crop
   pk: 492
-- code: '659'
-  fields:
+- fields:
+    code: '659'
     name: 菠蘿蜜
     parent: 31
   model: fallow.Crop
   pk: 493
-- code: '660'
-  fields:
+- fields:
+    code: '660'
     name: 神秘果
     parent: 31
   model: fallow.Crop
   pk: 494
-- code: '661'
-  fields:
+- fields:
+    code: '661'
     name: 蘋婆
     parent: 31
   model: fallow.Crop
   pk: 495
-- code: '662'
-  fields:
+- fields:
+    code: '662'
     name: 石榴
     parent: 31
   model: fallow.Crop
   pk: 496
-- code: '663'
-  fields:
+- fields:
+    code: '663'
     name: 其他柚類
     parent: 31
   model: fallow.Crop
   pk: 497
-- code: '696'
-  fields:
+- fields:
+    code: '696'
     name: 檳榔廢園
     parent: 31
   model: fallow.Crop
   pk: 498
-- code: '900'
-  fields:
+- fields:
+    code: '900'
     name: 花卉
     parent: 31
   model: fallow.Crop
   pk: 499
-- code: '920'
-  fields:
+- fields:
+    code: '920'
     name: 其他短切
     parent: 31
   model: fallow.Crop
   pk: 500
-- code: '921'
-  fields:
+- fields:
+    code: '921'
     name: 球根類
     parent: 31
   model: fallow.Crop
   pk: 501
-- code: '922'
-  fields:
+- fields:
+    code: '922'
     name: 種籽類
     parent: 31
   model: fallow.Crop
   pk: 502
-- code: '937'
-  fields:
+- fields:
+    code: '937'
     name: 天堂鳥
     parent: 31
   model: fallow.Crop
   pk: 503
-- code: '940'
-  fields:
+- fields:
+    code: '940'
     name: 其他長切
     parent: 31
   model: fallow.Crop
   pk: 504
-- code: '961'
-  fields:
+- fields:
+    code: '961'
     name: 水平棚架網室
     parent: 31
   model: fallow.Crop
   pk: 505
-- code: '962'
-  fields:
+- fields:
+    code: '962'
     name: 簡易式塑膠布溫(網)室
     parent: 31
   model: fallow.Crop
   pk: 506
-- code: '963'
-  fields:
+- fields:
+    code: '963'
     name: 固定型捲揚式塑膠布溫室
     parent: 31
   model: fallow.Crop
   pk: 507
-- code: '964'
-  fields:
+- fields:
+    code: '964'
     name: 其他-農業設施
     parent: 31
   model: fallow.Crop
   pk: 508
-- code: '993'
-  fields:
+- fields:
+    code: '993'
     name: 景觀向日葵
     parent: 31
   model: fallow.Crop
   pk: 509
-- code: 9A0
-  fields:
+- fields:
+    code: 9A0
     name: 羅漢松
     parent: 31
   model: fallow.Crop
   pk: 510
-- code: 9A1
-  fields:
+- fields:
+    code: 9A1
     name: 山防風
     parent: 31
   model: fallow.Crop
   pk: 511
-- code: 9A2
-  fields:
+- fields:
+    code: 9A2
     name: 蚌蘭
     parent: 31
   model: fallow.Crop
   pk: 512
-- code: 9A3
-  fields:
+- fields:
+    code: 9A3
     name: 紫茉莉
     parent: 31
   model: fallow.Crop
   pk: 513
-- code: 9A4
-  fields:
+- fields:
+    code: 9A4
     name: 何首烏
     parent: 31
   model: fallow.Crop
   pk: 514
-- code: 9A5
-  fields:
+- fields:
+    code: 9A5
     name: 月桃葉
     parent: 31
   model: fallow.Crop
   pk: 515
-- code: 9A6
-  fields:
+- fields:
+    code: 9A6
     name: 狗尾草
     parent: 31
   model: fallow.Crop
   pk: 516
-- code: 9A7
-  fields:
+- fields:
+    code: 9A7
     name: 桂花
     parent: 31
   model: fallow.Crop
   pk: 517
-- code: 9A8
-  fields:
+- fields:
+    code: 9A8
     name: 金合歡
     parent: 31
   model: fallow.Crop
   pk: 518
-- code: 9A9
-  fields:
+- fields:
+    code: 9A9
     name: 龍柏
     parent: 31
   model: fallow.Crop
   pk: 519
-- code: 9AA
-  fields:
+- fields:
+    code: 9AA
     name: 水沉香
     parent: 31
   model: fallow.Crop
   pk: 520
-- code: 9AB
-  fields:
+- fields:
+    code: 9AB
     name: 牛樟木
     parent: 31
   model: fallow.Crop
   pk: 521
-- code: 9AC
-  fields:
+- fields:
+    code: 9AC
     name: 欖李樹
     parent: 31
   model: fallow.Crop
   pk: 522
-- code: 9AD
-  fields:
+- fields:
+    code: 9AD
     name: 玉桂
     parent: 31
   model: fallow.Crop
   pk: 523
-- code: 9AE
-  fields:
+- fields:
+    code: 9AE
     name: 桂花
     parent: 31
   model: fallow.Crop
   pk: 524
-- code: 9AF
-  fields:
+- fields:
+    code: 9AF
     name: 棕梠
     parent: 31
   model: fallow.Crop
