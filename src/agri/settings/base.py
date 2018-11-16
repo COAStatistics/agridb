@@ -128,6 +128,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 FIXTURE_DIRS = [
     os.path.join(BASE_DIR, 'fixtures'),
+    os.path.join(BASE_DIR, 'fixtures/fallow'),
     os.path.join(BASE_DIR, 'fixtures/tests'),
 ]
 
