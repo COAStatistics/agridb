@@ -137,7 +137,106 @@ class YearListCreateAPIView(generics.ListCreateAPIView):
     serializer_class = serializers.YearSerializer
     queryset = models.Year.objects.all()
     permission_classes = [IsAuthenticated]
+
+
+class HouseholdHashListAPIView(generics.ListAPIView):
+    serializer_class = serializers.HouseholdSerializer
+    queryset = models.Household.objects.all()
+    permission_classes = [IsAuthenticated]
     pagination_class = ThousandPagination
+
+    def list(self, request, *args, **kwargs):
+        queryset = self.filter_queryset(self.get_queryset())
+
+        page = self.paginate_queryset(queryset)
+        if page is not None:
+            serializer = self.get_serializer(page, many=True)
+            data = {}
+            for i in serializer.data:
+                data[i['household_number']] = i['id']
+            return self.get_paginated_response(data)
+
+        serializer = self.get_serializer(queryset, many=True)
+        data = {}
+        for i in serializer.data:
+            data[i['household_number']] = i['id']
+
+        return Response(data)
+
+
+class RoleHashListAPIView(generics.ListAPIView):
+    serializer_class = serializers.RoleSerializer
+    queryset = models.Role.objects.all()
+    permission_classes = [IsAuthenticated]
+    pagination_class = ThousandPagination
+
+    def list(self, request, *args, **kwargs):
+        queryset = self.filter_queryset(self.get_queryset())
+
+        page = self.paginate_queryset(queryset)
+        if page is not None:
+            serializer = self.get_serializer(page, many=True)
+            data = {}
+            for i in serializer.data:
+                data[i['name']] = i['id']
+            return self.get_paginated_response(data)
+
+        serializer = self.get_serializer(queryset, many=True)
+        data = {}
+        for i in serializer.data:
+            data[i['name']] = i['id']
+
+        return Response(data)
+
+
+class MemberHashListAPIView(generics.ListAPIView):
+    serializer_class = serializers.MemberSerializer
+    queryset = models.Member.objects.all()
+    permission_classes = [IsAuthenticated]
+    pagination_class = ThousandPagination
+
+    def list(self, request, *args, **kwargs):
+        queryset = self.filter_queryset(self.get_queryset())
+
+        page = self.paginate_queryset(queryset)
+        if page is not None:
+            serializer = self.get_serializer(page, many=True)
+            data = {}
+            for i in serializer.data:
+                data[i['app_id']] = i['id']
+            return self.get_paginated_response(data)
+
+        serializer = self.get_serializer(queryset, many=True)
+        data = {}
+        for i in serializer.data:
+            data[i['app_id']] = i['id']
+
+        return Response(data)
+
+
+class YearHashListAPIView(generics.ListAPIView):
+    serializer_class = serializers.YearSerializer
+    queryset = models.Year.objects.all()
+    permission_classes = [IsAuthenticated]
+    pagination_class = ThousandPagination
+
+    def list(self, request, *args, **kwargs):
+        queryset = self.filter_queryset(self.get_queryset())
+
+        page = self.paginate_queryset(queryset)
+        if page is not None:
+            serializer = self.get_serializer(page, many=True)
+            data = {}
+            for i in serializer.data:
+                data[i['name']] = i['id']
+            return self.get_paginated_response(data)
+
+        serializer = self.get_serializer(queryset, many=True)
+        data = {}
+        for i in serializer.data:
+            data[i['name']] = i['id']
+
+        return Response(data)
 
 
 class HouseholdRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
