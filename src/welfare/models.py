@@ -17,7 +17,7 @@ class ElderlyAllowance(Model):
     update_time = DateTimeField(auto_now=True, null=True, blank=True, verbose_name='Updated')
 
     def __str__(self):
-        return self.member
+        return "{}  {}  {}".format(self.member, self.year, self.subsidy)
 
 
 class FarmerInsurance(Model):
@@ -26,7 +26,7 @@ class FarmerInsurance(Model):
     update_time = DateTimeField(auto_now=True, null=True, blank=True, verbose_name='Updated')
 
     def __str__(self):
-        return self.member
+        return "{}  {}".format(self.member, self.year)
 
 
 class Scholarship(Model):
