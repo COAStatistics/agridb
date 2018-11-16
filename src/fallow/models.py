@@ -13,6 +13,7 @@ class Crop(models.Model):
 
 class Declare(models.Model):
     member = models.ForeignKey('household.Member', on_delete=models.CASCADE, verbose_name='Member')
+    year = models.ForeignKey('household.Year', on_delete=models.CASCADE, verbose_name='Year', default=1)
     update_time = models.DateTimeField(auto_now=True, auto_now_add=False, null=True, blank=True, verbose_name='Updated')
 
     def __str__(self):
