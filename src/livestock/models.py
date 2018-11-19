@@ -17,6 +17,7 @@ SEASON_CHOICES = [
 
 class Livestock(Model):
     name = CharField(max_length=50, unique=True, verbose_name='Name')
+    code = CharField(max_length=12, verbose_name='Code', default='default')
     parent = ForeignKey('self', blank=True, null=True, on_delete=CASCADE, verbose_name='Parent')
     update_time = DateTimeField(auto_now=True, null=True, blank=True, verbose_name='Updated')
 
