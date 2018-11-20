@@ -1,0 +1,24 @@
+- model: livestock.CountType
+  pk: 1
+  fields:
+    name: 在養量
+
+- model: livestock.CountType
+  pk: 2
+  fields:
+    name: 屠宰量
+
+- model: livestock.CountType
+  pk: 3
+  fields:
+    name: 產乳量
+
+- model: livestock.CountType
+  pk: 4
+  fields:
+    name: 產鹿角量
+
+- model: livestock.CountType
+  pk: 5
+  fields:
+    name: 產蛋量
