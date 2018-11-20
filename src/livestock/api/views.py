@@ -24,6 +24,19 @@ class LivestockRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIVie
     permission_classes = [IsAuthenticated]
 
 
+class InvestigationTypeListCreateAPIView(generics.ListCreateAPIView):
+    serializer_class = serializers.InvestigationTypeSerializer
+    queryset = models.InvestigationType.objects.all()
+    permission_classes = [IsAuthenticated]
+    pagination_class = ThousandPagination
+
+
+class InvestigationTypeRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
+    serializer_class = serializers.InvestigationTypeSerializer
+    queryset = models.InvestigationType.objects.all()
+    permission_classes = [IsAuthenticated]
+
+
 class InvestigationListCreateAPIView(generics.ListCreateAPIView):
     serializer_class = serializers.InvestigationSerializer
     queryset = models.Investigation.objects.all()
@@ -74,3 +87,30 @@ class ProfileRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView)
     serializer_class = serializers.ProfileSerializer
     queryset = models.Profile.objects.all()
     permission_classes = [IsAuthenticated]
+
+
+# hash api
+
+class LivestockHashListAPIView(generics.ListAPIView):
+    serializer_class = serializers.LivestockSerializer
+    queryset = models.Livestock.objects.all()
+    permission_classes = [IsAuthenticated]
+    pagination_class = ThousandPagination
+
+    def list(self, request, *args, **kwargs):
+        queryset = self.filter_queryset(self.get_queryset())
+
+        paginate_queryset = self.paginate_queryset(queryset)
+
+        if paginate_queryset is not None:
+            response = self.get_paginated_response
+            queryset = paginate_queryset
+        else:
+            response = Response
+
+        serializer = self.get_serializer(queryset, many=True)
+        data = {}
+        for i in serializer.data:
+            data[i['full_code']] = i['id']
+
+        return response(data)

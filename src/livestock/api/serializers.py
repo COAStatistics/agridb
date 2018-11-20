@@ -1,8 +1,14 @@
-from rest_framework.serializers import ModelSerializer
-
+from rest_framework.validators import (
+    UniqueTogetherValidator,
+)
+from rest_framework.serializers import (
+    ModelSerializer,
+    SerializerMethodField,
+)
 from livestock.models import (
     Livestock,
     Investigation,
+    InvestigationType,
     CountType,
     Field,
     Profile,
@@ -10,9 +16,26 @@ from livestock.models import (
 
 
 class LivestockSerializer(ModelSerializer):
+    full_code = SerializerMethodField()
+
+    def get_full_code(self, ins):
+        return ins.full_code()
 
     class Meta:
         model = Livestock
+        fields = '__all__'
+
+    validators = [
+        UniqueTogetherValidator(
+            queryset=Field.objects.all(),
+            fields=('parent', 'name', 'code'),
+        )
+    ]
+
+
+class InvestigationTypeSerializer(ModelSerializer):
+    class Meta:
+        model = InvestigationType
         fields = '__all__'
 
 
@@ -20,6 +43,12 @@ class InvestigationSerializer(ModelSerializer):
     class Meta:
         model = Investigation
         fields = '__all__'
+        validators = [
+            UniqueTogetherValidator(
+                queryset=Field.objects.all(),
+                fields=('type', 'year', 'season'),
+            )
+        ]
 
 
 class CountTypeSerializer(ModelSerializer):
@@ -32,9 +61,21 @@ class FieldSerializer(ModelSerializer):
     class Meta:
         model = Field
         fields = '__all__'
+        validators = [
+            UniqueTogetherValidator(
+                queryset=Field.objects.all(),
+                fields=('name', 'member'),
+            )
+        ]
 
 
 class ProfileSerializer(ModelSerializer):
     class Meta:
         model = Profile
         fields = '__all__'
+        validators = [
+            UniqueTogetherValidator(
+                queryset=Field.objects.all(),
+                fields=('investigation', 'field', 'livestock', 'count_type', 'value'),
+            )
+        ]
