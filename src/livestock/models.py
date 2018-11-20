@@ -51,8 +51,10 @@ class Investigation(Model):
     def __str__(self):
         return 'year:{0}, season:{1}'.format(self.year, self.season)
 
-    def get_season(self):
-        return self.type.code + self.season
+    def full_season(self):
+        if self.type:
+            return self.type.code + self.season
+        return self.season
 
 
 class CountType(Model):

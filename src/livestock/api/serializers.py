@@ -40,6 +40,11 @@ class InvestigationTypeSerializer(ModelSerializer):
 
 
 class InvestigationSerializer(ModelSerializer):
+    full_season = SerializerMethodField()
+
+    def get_full_season(self, ins):
+        return ins.full_season()
+
     class Meta:
         model = Investigation
         fields = '__all__'
