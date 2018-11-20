@@ -27,7 +27,7 @@ class LivestockSerializer(ModelSerializer):
 
     validators = [
         UniqueTogetherValidator(
-            queryset=Field.objects.all(),
+            queryset=Livestock.objects.all(),
             fields=('parent', 'name', 'code'),
         )
     ]
@@ -45,7 +45,7 @@ class InvestigationSerializer(ModelSerializer):
         fields = '__all__'
         validators = [
             UniqueTogetherValidator(
-                queryset=Field.objects.all(),
+                queryset=Investigation.objects.all(),
                 fields=('type', 'year', 'season'),
             )
         ]
@@ -75,7 +75,7 @@ class ProfileSerializer(ModelSerializer):
         fields = '__all__'
         validators = [
             UniqueTogetherValidator(
-                queryset=Field.objects.all(),
+                queryset=Profile.objects.all(),
                 fields=('investigation', 'field', 'livestock', 'count_type', 'value'),
             )
         ]
