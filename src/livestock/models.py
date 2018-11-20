@@ -18,7 +18,7 @@ SEASON_CHOICES = [
 class Livestock(Model):
     name = CharField(max_length=50, verbose_name='Name')
     code = CharField(max_length=12, verbose_name='Code', default='default')
-    parent = ForeignKey('self', blank=True, null=True, on_delete=CASCADE, verbose_name='Parent')
+    parent = ForeignKey('self', blank=True, null=True, default=None, on_delete=CASCADE, verbose_name='Parent')
     update_time = DateTimeField(auto_now=True, null=True, blank=True, verbose_name='Updated')
 
     class Meta:
@@ -51,8 +51,10 @@ class Investigation(Model):
     def __str__(self):
         return 'year:{0}, season:{1}'.format(self.year, self.season)
 
-    def get_season(self):
-        return self.type.code + self.season
+    def full_season(self):
+        if self.type:
+            return self.type.code + self.season
+        return self.season
 
 
 class CountType(Model):
@@ -76,6 +78,7 @@ class Field(Model):
 
 
 class Profile(Model):
+    member = ForeignKey('household.Member', on_delete=CASCADE, verbose_name='Member')
     investigation = ForeignKey('livestock.Investigation', on_delete=CASCADE, verbose_name='Investigation')
     field = ForeignKey('livestock.Field', null=True, on_delete=CASCADE, verbose_name='Field')
     livestock = ForeignKey('livestock.Livestock', on_delete=CASCADE, verbose_name='Livestock')

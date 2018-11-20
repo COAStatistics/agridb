@@ -4,6 +4,7 @@ from rest_framework.validators import (
 from rest_framework.serializers import (
     ModelSerializer,
     SerializerMethodField,
+    PrimaryKeyRelatedField,
 )
 from livestock.models import (
     Livestock,
@@ -17,6 +18,7 @@ from livestock.models import (
 
 class LivestockSerializer(ModelSerializer):
     full_code = SerializerMethodField()
+    parent = PrimaryKeyRelatedField(queryset=Livestock.objects.all(), default=None)
 
     def get_full_code(self, ins):
         return ins.full_code()
@@ -27,7 +29,7 @@ class LivestockSerializer(ModelSerializer):
 
     validators = [
         UniqueTogetherValidator(
-            queryset=Field.objects.all(),
+            queryset=Livestock.objects.all(),
             fields=('parent', 'name', 'code'),
         )
     ]
@@ -40,12 +42,17 @@ class InvestigationTypeSerializer(ModelSerializer):
 
 
 class InvestigationSerializer(ModelSerializer):
+    full_season = SerializerMethodField()
+
+    def get_full_season(self, ins):
+        return ins.full_season()
+
     class Meta:
         model = Investigation
         fields = '__all__'
         validators = [
             UniqueTogetherValidator(
-                queryset=Field.objects.all(),
+                queryset=Investigation.objects.all(),
                 fields=('type', 'year', 'season'),
             )
         ]
@@ -75,7 +82,7 @@ class ProfileSerializer(ModelSerializer):
         fields = '__all__'
         validators = [
             UniqueTogetherValidator(
-                queryset=Field.objects.all(),
+                queryset=Profile.objects.all(),
                 fields=('investigation', 'field', 'livestock', 'count_type', 'value'),
             )
         ]
