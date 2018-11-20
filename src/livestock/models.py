@@ -78,6 +78,7 @@ class Field(Model):
 
 
 class Profile(Model):
+    member = ForeignKey('household.Member', on_delete=CASCADE, verbose_name='Member')
     investigation = ForeignKey('livestock.Investigation', on_delete=CASCADE, verbose_name='Investigation')
     field = ForeignKey('livestock.Field', null=True, on_delete=CASCADE, verbose_name='Field')
     livestock = ForeignKey('livestock.Livestock', on_delete=CASCADE, verbose_name='Livestock')
