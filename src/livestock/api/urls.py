@@ -16,4 +16,5 @@ urlpatterns = [
     path('field/<int:pk>', views.FieldRetrieveUpdateDestroyAPIView.as_view(), name='api_field_rud'),
     path('profile/<int:pk>', views.ProfileRetrieveUpdateDestroyAPIView.as_view(), name='api_profile_rud'),
     path('livestock_hash/', views.LivestockHashListAPIView.as_view(), name='api_livestock_hash'),
+    path('livestock_result/', views.LivestockResult.as_view(), name='api_livestock_result'),
 ]

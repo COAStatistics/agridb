@@ -38,6 +38,9 @@ class InvestigationType(Model):
     code = CharField(max_length=1, verbose_name='Code', default='Q')
     update_time = DateTimeField(auto_now=True, null=True, blank=True, verbose_name='Updated')
 
+    class Meta:
+        ordering = ('id',)
+
     def __str__(self):
         return self.name
 
@@ -47,6 +50,9 @@ class Investigation(Model):
     year = IntegerField(verbose_name='Year')
     season = CharField(max_length=1, choices=SEASON_CHOICES, verbose_name='Season')
     update_time = DateTimeField(auto_now=True, null=True, blank=True, verbose_name='Updated')
+
+    class Meta:
+        ordering = ('id',)
 
     def __str__(self):
         return 'year:{0}, season:{1}'.format(self.year, self.season)
@@ -60,6 +66,9 @@ class Investigation(Model):
 class CountType(Model):
     name = CharField(max_length=50, unique=True, verbose_name='Name')
     update_time = DateTimeField(auto_now=True, null=True, blank=True, verbose_name='Updated')
+
+    class Meta:
+        ordering = ('id',)
 
     def __str__(self):
         return self.name
@@ -85,6 +94,9 @@ class Profile(Model):
     count_type = ForeignKey('livestock.CountType', on_delete=CASCADE, verbose_name='Count Type')
     value = IntegerField(verbose_name='Value')
     update_time = DateTimeField(auto_now=True, null=True, blank=True, verbose_name='Updated')
+
+    class Meta:
+        ordering = ('id',)
 
     def __str__(self):
         return 'field:{0}, type:{1}, value:{2}'.format(self.field, self.count_type, self.value)
