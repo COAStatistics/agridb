@@ -94,6 +94,7 @@ class LivestockResultSerializer(ModelSerializer):
     year = SerializerMethodField()
     season = SerializerMethodField()
     field = SerializerMethodField()
+    livestock = SerializerMethodField()
 
     def get_member(self, ins):
         return ins.member.app_id
@@ -111,6 +112,9 @@ class LivestockResultSerializer(ModelSerializer):
         if ins.field:
             return ins.field.name
         return None
+
+    def get_livestock(self, ins):
+        return ins.livestock.name
 
     class Meta:
         model = Profile
