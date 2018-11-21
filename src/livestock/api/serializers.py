@@ -86,3 +86,32 @@ class ProfileSerializer(ModelSerializer):
                 fields=('investigation', 'field', 'livestock', 'count_type', 'value'),
             )
         ]
+
+
+class LivestockResultSerializer(ModelSerializer):
+    member = SerializerMethodField()
+    count_type = SerializerMethodField()
+    year = SerializerMethodField()
+    season = SerializerMethodField()
+    field = SerializerMethodField()
+
+    def get_member(self, ins):
+        return ins.member.app_id
+
+    def get_count_type(self, ins):
+        return ins.count_type.name
+
+    def get_year(self, ins):
+        return ins.investigation.year
+
+    def get_season(self, ins):
+        return ins.investigation.full_season()
+
+    def get_field(self, ins):
+        if ins.field:
+            return ins.field.name
+        return None
+
+    class Meta:
+        model = Profile
+        fields = ['member', 'field', 'year', 'season', 'count_type', 'value']
