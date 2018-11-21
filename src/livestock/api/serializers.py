@@ -28,7 +28,7 @@ class LivestockSerializer(ModelSerializer):
     validators = [
         UniqueTogetherValidator(
             queryset=Livestock.objects.all(),
-            fields=('parent', 'name', 'code'),
+            fields=('name', 'code'),
         )
     ]
 
