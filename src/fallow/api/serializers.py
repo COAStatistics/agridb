@@ -1,4 +1,7 @@
 from rest_framework.serializers import ModelSerializer
+from rest_framework.validators import (
+    UniqueTogetherValidator,
+)
 from fallow.models import (
     Crop,
     Declare,
@@ -41,3 +44,9 @@ class TransferCropSerializers(ModelSerializer):
     class Meta:
         model = TransferCrop
         fields = '__all__'
+        validators = [
+            UniqueTogetherValidator(
+                queryset=TransferCrop.objects.all(),
+                fields=('declare', 'crop'),
+            )
+        ]
