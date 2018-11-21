@@ -27,7 +27,7 @@ class Disaster(Model):
     event = ForeignKey('disaster.DisasterEvent', on_delete=CASCADE, verbose_name='Event')
     crop = ForeignKey('fallow.crop', on_delete=CASCADE, verbose_name='Crop')
     area = FloatField(verbose_name='Area')
-    subsidy = FloatField(verbose_name='Subsidy')
+    subsidy = PositiveIntegerField(verbose_name='Subsidy')
     update_time = DateTimeField(auto_now=True, auto_now_add=False, null=True, blank=True, verbose_name='Updated')
 
     def __str__(self):
