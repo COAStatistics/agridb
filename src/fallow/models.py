@@ -35,6 +35,7 @@ class FallowTransfer(models.Model):
     crop = models.ForeignKey('fallow.Crop', on_delete=models.CASCADE, verbose_name='Crop')
     subsidy = models.IntegerField(null=True, verbose_name='Subsidy')
     period = models.CharField(max_length=1, null=True, verbose_name='Period')
+    year = models.ForeignKey('household.Year', on_delete=models.CASCADE, verbose_name='Year', default=1)
     update_time = models.DateTimeField(auto_now=True, auto_now_add=False, null=True, blank=True, verbose_name='Updated')
 
     def __str__(self):

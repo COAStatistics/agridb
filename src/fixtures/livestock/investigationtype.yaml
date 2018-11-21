@@ -1,0 +1,11 @@
+- pk: 1
+  model: livestock.InvestigationType
+  fields:
+    code: Q
+    name: 畜牧農情調查
+
+- pk: 2
+  model: livestock.InvestigationType
+  fields:
+    code: M
+    name: 養豬頭數調查
