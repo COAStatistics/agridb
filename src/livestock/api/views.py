@@ -114,3 +114,12 @@ class LivestockHashListAPIView(generics.ListAPIView):
             data[i['full_code']] = i['id']
 
         return response(data)
+
+# view api
+
+
+class LivestockResult(generics.ListAPIView):
+    serializer_class = serializers.LivestockResultSerializer
+    queryset = models.Profile.objects.all()
+    permission_classes = [IsAuthenticated]
+    pagination_class = ThousandPagination
