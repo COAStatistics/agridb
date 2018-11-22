@@ -1,6 +1,8 @@
 from . import serializers
 from rest_framework import generics
+from rest_framework import status
 from rest_framework.permissions import IsAuthenticated
+from rest_framework.response import Response
 from smallbig import models
 from household.api.views import ThousandPagination
 
@@ -31,6 +33,21 @@ class TenantListCreateAPIView(generics.ListCreateAPIView):
     queryset = models.Tenant.objects.all()
     permission_classes = [IsAuthenticated]
     pagination_class = ThousandPagination
+
+    def create(self, request, *args, **kwargs):
+
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+
+        self.member = request.POST['member'] or None
+        self.owner = request.POST['owner'] or None
+        self.year = request.POST['year'] or 1
+        if models.Tenant.objects.filter(member=self.member, owner=self.owner, year=self.year).exists():
+            return Response("The fields member, owner, year must make a unique set.")
+
+        self.perform_create(serializer)
+        headers = self.get_success_headers(serializer.data)
+        return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)
 
 
 class LandlordRetireHashListAPIView(generics.ListCreateAPIView):
