@@ -2,7 +2,6 @@ from django.db.models import (
     Model,
     CharField,
     ForeignKey,
-    IntegerField,
     CASCADE,
     PositiveIntegerField,
     DateTimeField,
@@ -23,9 +22,9 @@ class DisasterEvent(Model):
 
 
 class Disaster(Model):
-    member = ForeignKey('household.member', on_delete=CASCADE, verbose_name='Member')
-    event = ForeignKey('disaster.DisasterEvent', on_delete=CASCADE, verbose_name='Event')
-    crop = ForeignKey('fallow.crop', on_delete=CASCADE, verbose_name='Crop')
+    member = ForeignKey('household.member', on_delete=CASCADE, verbose_name='Member', related_name='disasters')
+    event = ForeignKey('disaster.DisasterEvent', on_delete=CASCADE, verbose_name='Event', related_name='disasters')
+    crop = ForeignKey('fallow.crop', on_delete=CASCADE, verbose_name='Crop', related_name='disasters')
     area = FloatField(verbose_name='Area')
     subsidy = PositiveIntegerField(verbose_name='Subsidy')
     update_time = DateTimeField(auto_now=True, auto_now_add=False, null=True, blank=True, verbose_name='Updated')

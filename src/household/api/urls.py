@@ -16,4 +16,6 @@ urlpatterns = [
     path('role/<int:pk>', views.RoleRetrieveUpdateDestroyAPIView.as_view(), name='api_role_rud'),
     path('member/<int:pk>', views.MemberRetrieveUpdateDestroyAPIView.as_view(), name='api_member_rud'),
     path('year/<int:pk>', views.YearRetrieveUpdateDestroyAPIView.as_view(), name='api_year_rud'),
+    # nested
+    path('member_nested/', views.MemberNestedListAPIView.as_view(), name='api_member_nested'),
 ]

@@ -6,6 +6,8 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
 from livestock import models
+from household.models import Member
+from household.api.serializers import MemberSerializer
 from household.api.views import ThousandPagination
 
 from . import serializers
@@ -114,12 +116,3 @@ class LivestockHashListAPIView(generics.ListAPIView):
             data[i['full_code']] = i['id']
 
         return response(data)
-
-# view api
-
-
-class LivestockResult(generics.ListAPIView):
-    serializer_class = serializers.LivestockResultSerializer
-    queryset = models.Profile.objects.all()
-    permission_classes = [IsAuthenticated]
-    pagination_class = ThousandPagination

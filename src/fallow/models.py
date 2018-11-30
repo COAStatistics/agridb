@@ -12,8 +12,8 @@ class Crop(models.Model):
 
 
 class Declare(models.Model):
-    member = models.ForeignKey('household.Member', on_delete=models.CASCADE, verbose_name='Member')
-    year = models.ForeignKey('household.Year', on_delete=models.CASCADE, verbose_name='Year', default=1)
+    member = models.ForeignKey('household.Member', on_delete=models.CASCADE, verbose_name='Member', related_name='declares')
+    year = models.ForeignKey('household.Year', on_delete=models.CASCADE, verbose_name='Year', default=1, related_name='declares')
     update_time = models.DateTimeField(auto_now=True, auto_now_add=False, null=True, blank=True, verbose_name='Updated')
 
     def __str__(self):
@@ -21,7 +21,7 @@ class Declare(models.Model):
 
 
 class RiceArea(models.Model):
-    crop = models.ForeignKey('fallow.Crop', on_delete=models.CASCADE, verbose_name='Crop')
+    crop = models.ForeignKey('fallow.Crop', on_delete=models.CASCADE, verbose_name='Crop', related_name='rice_areas')
     area = models.FloatField(null=True, verbose_name='Area')
     update_time = models.DateTimeField(auto_now=True, auto_now_add=False, null=True, blank=True, verbose_name='Updated')
 
@@ -30,8 +30,8 @@ class RiceArea(models.Model):
 
 
 class FallowTransfer(models.Model):
-    member = models.ForeignKey('household.Member', on_delete=models.CASCADE, verbose_name='Member')
-    crop = models.ForeignKey('fallow.Crop', on_delete=models.CASCADE, verbose_name='Crop')
+    member = models.ForeignKey('household.Member', on_delete=models.CASCADE, verbose_name='Member', related_name='fallow_transfer')
+    crop = models.ForeignKey('fallow.Crop', on_delete=models.CASCADE, verbose_name='Crop', related_name='fallow_transfer')
     subsidy = models.IntegerField(null=True, verbose_name='Subsidy')
     period = models.CharField(max_length=1, null=True, verbose_name='Period')
     year = models.ForeignKey('household.Year', on_delete=models.CASCADE, verbose_name='Year', default=1)
@@ -42,8 +42,8 @@ class FallowTransfer(models.Model):
 
 
 class TransferCrop(models.Model):
-    declare = models.ForeignKey('fallow.Declare', on_delete=models.CASCADE, verbose_name='Declare')
-    crop = models.ForeignKey('fallow.Crop', on_delete=models.CASCADE, verbose_name='Crop')
+    declare = models.ForeignKey('fallow.Declare', on_delete=models.CASCADE, verbose_name='Declare', related_name='transfer_crops')
+    crop = models.ForeignKey('fallow.Crop', on_delete=models.CASCADE, verbose_name='Crop', related_name='transfer_crops')
     update_time = models.DateTimeField(auto_now=True, auto_now_add=False, null=True, blank=True, verbose_name='Updated')
 
     def __str__(self):

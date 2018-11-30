@@ -21,8 +21,8 @@ class Role(models.Model):
 
 
 class Member(models.Model):
-    household = models.ForeignKey('household.Household', on_delete=models.CASCADE)
-    role = models.ForeignKey('household.Role', on_delete=models.CASCADE)
+    household = models.ForeignKey('household.Household', on_delete=models.CASCADE, related_name='members')
+    role = models.ForeignKey('household.Role', on_delete=models.CASCADE, related_name='members')
     app_id = models.CharField(max_length=10, unique=True)
     name = models.CharField(max_length=50, null=True)
     birth = models.DateField(null=True)
