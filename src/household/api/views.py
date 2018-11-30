@@ -8,7 +8,7 @@ from django.db.models import Q
 
 from household import models
 
-from . import serializers
+from . import serializers, serializers_nested
 
 
 class ThousandPagination(pagination.PageNumberPagination):
@@ -261,3 +261,10 @@ class YearRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = serializers.YearSerializer
     queryset = models.Year.objects.all()
     permission_classes = [IsAuthenticated]
+
+
+class MemberNestedListAPIView(generics.ListAPIView):
+    serializer_class = serializers_nested.MemberSerializer
+    queryset = models.Member.objects.all()
+    permission_classes = [IsAuthenticated]
+    pagination_class = ThousandPagination

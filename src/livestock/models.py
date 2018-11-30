@@ -76,7 +76,7 @@ class CountType(Model):
 
 class Field(Model):
     name = CharField(max_length=50, verbose_name='Name')
-    member = ForeignKey('household.Member', on_delete=CASCADE, verbose_name='Member')
+    member = ForeignKey('household.Member', on_delete=CASCADE, verbose_name='Member', related_name='fields')
     update_time = DateTimeField(auto_now=True, null=True, blank=True, verbose_name='Updated')
 
     class Meta:
@@ -87,11 +87,11 @@ class Field(Model):
 
 
 class Profile(Model):
-    member = ForeignKey('household.Member', on_delete=CASCADE, verbose_name='Member')
-    investigation = ForeignKey('livestock.Investigation', on_delete=CASCADE, verbose_name='Investigation')
-    field = ForeignKey('livestock.Field', null=True, on_delete=CASCADE, verbose_name='Field')
-    livestock = ForeignKey('livestock.Livestock', on_delete=CASCADE, verbose_name='Livestock')
-    count_type = ForeignKey('livestock.CountType', on_delete=CASCADE, verbose_name='Count Type')
+    member = ForeignKey('household.Member', on_delete=CASCADE, verbose_name='Member', related_name='profiles')
+    investigation = ForeignKey('livestock.Investigation', on_delete=CASCADE, verbose_name='Investigation', related_name='profiles')
+    field = ForeignKey('livestock.Field', null=True, on_delete=CASCADE, verbose_name='Field', related_name='profiles')
+    livestock = ForeignKey('livestock.Livestock', on_delete=CASCADE, verbose_name='Livestock', related_name='profiles')
+    count_type = ForeignKey('livestock.CountType', on_delete=CASCADE, verbose_name='Count Type', related_name='profiles')
     value = IntegerField(verbose_name='Value')
     update_time = DateTimeField(auto_now=True, null=True, blank=True, verbose_name='Updated')
 
