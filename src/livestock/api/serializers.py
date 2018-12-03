@@ -77,6 +77,8 @@ class FieldSerializer(ModelSerializer):
 
 
 class ProfileSerializer(ModelSerializer):
+    field = PrimaryKeyRelatedField(queryset=Field.objects.all(), default=None)
+
     class Meta:
         model = Profile
         fields = '__all__'
