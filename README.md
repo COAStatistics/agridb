@@ -13,3 +13,32 @@ PyYAML==3.13
 
 ## Project initialization  
 Trello
+
+## [Graphs](doc/graphs/README.md)
+
+**household**
+
+![image](doc/graphs/household.png)
+
+**welfare**
+
+![image](doc/graphs/welfare.png)
+
+**smallbig**
+
+![image](doc/graphs/smallbig.png)
+
+**livestock**
+
+![image](doc/graphs/livestock.png)
+
+**fallow**
+
+![image](doc/graphs/fallow.png)
+
+**disaster**
+
+![image](doc/graphs/fallow.png)
+
+
+
